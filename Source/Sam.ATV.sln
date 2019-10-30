@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serialization", "Serializat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sam.ATV.Web", "Project\Sam.ATV.Web\Sam.ATV.Web.csproj", "{C69BC053-8A65-4A06-A844-E7B957F3BDFB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sam.ATV.Serialization", "Serialization\Sam.ATV.Serialization\Sam.ATV.Serialization.csproj", "{789EF5D0-9839-4DAA-B53E-1ABA174BD1A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +25,17 @@ Global
 		{C69BC053-8A65-4A06-A844-E7B957F3BDFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C69BC053-8A65-4A06-A844-E7B957F3BDFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C69BC053-8A65-4A06-A844-E7B957F3BDFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{789EF5D0-9839-4DAA-B53E-1ABA174BD1A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{789EF5D0-9839-4DAA-B53E-1ABA174BD1A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{789EF5D0-9839-4DAA-B53E-1ABA174BD1A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{789EF5D0-9839-4DAA-B53E-1ABA174BD1A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C69BC053-8A65-4A06-A844-E7B957F3BDFB} = {D9113BAF-8BC0-427A-8D84-75C7A27E0912}
+		{789EF5D0-9839-4DAA-B53E-1ABA174BD1A2} = {7005540F-7444-4CB8-AFDC-18BF4EEEBEAB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {395B8A59-E537-4C4A-97F8-3F6A5FC50D89}
