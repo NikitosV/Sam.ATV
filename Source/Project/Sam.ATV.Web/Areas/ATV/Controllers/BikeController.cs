@@ -9,9 +9,9 @@ namespace Sam.ATV.Web.Areas.ATV.Controllers
     public class BikeController : Controller
     {
         // GET: ATV/Bike
-        public ActionResult Index()
+        public ViewResult Bike()
         {
-            return View();
+            return View("~/Areas/ATV/Views/Bike/Bike.cshtml");
         }
     }
 }

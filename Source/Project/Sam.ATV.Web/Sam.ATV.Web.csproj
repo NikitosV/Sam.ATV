@@ -189,6 +189,7 @@
     <Content Include="App_Config\Include\Glass.Mapper.Sc.Start.config" />
     <Content Include="App_Config\Include\Glass.Mapper.Sc.config" />
     <Content Include="App_Config\Include\Glass.Mapper.Sc.CodeFirst.config.exclude" />
+    <Content Include="Areas\ATV\Views\Bike\Bike.cshtml" />
     <None Include="Global.asax" />
     <Content Include="App_Config\Include\zzz.Sam.ATV.Web\zzz.Sam.ATV.config">
       <SubType>Designer</SubType>
@@ -267,7 +268,6 @@
   <ItemGroup>
     <Folder Include="Areas\ATV\Logic\" />
     <Folder Include="Areas\ATV\Models\" />
-    <Folder Include="Areas\ATV\Views\Bike\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
