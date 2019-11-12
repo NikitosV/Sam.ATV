@@ -1,0 +1,30 @@
+﻿---
+ID: "eb838285-4570-4733-90f1-87d2005aecd5"
+Parent: "b07b3157-cc52-4fe4-8d58-b85749dca446"
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Path: /sitecore/layout/Renderings/Feature/MyButton/MyButton
+DB: master
+SharedFields:
+- ID: "13f89250-ad6b-4548-882e-118a12c18094"
+  Hint: Parameters Template
+  Value: "{D96F97B7-A613-4B79-8B0B-82F4D2F280BE}"
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: /sitecore/templates/Feature/MyButton/Button Data Source Template
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
+  Hint: Datasource Location
+  Value: /sitecore/content/Sam/ATV/Content/MyButton
+- ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
+  Hint: Controller Action
+  Value: MyButton
+- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
+  Hint: Controller
+  Value: Sam.Feature.MyButton.Areas.MyButton.Controllers.MyButtonController, Sam.Feature.MyButton
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191111T145142Z

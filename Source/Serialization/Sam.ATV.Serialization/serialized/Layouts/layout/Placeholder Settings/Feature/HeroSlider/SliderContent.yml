@@ -1,0 +1,22 @@
+﻿---
+ID: "12debc92-60f7-460a-b24e-98940545fcc7"
+Parent: "ce401dd3-0c2d-4a29-92dc-14bb797cd4ec"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Feature/HeroSlider/SliderContent
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: SliderContent
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: "{A19CA50F-AB75-4B5E-B83D-3535B2E6A1CE}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191111T124116Z

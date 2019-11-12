@@ -1,0 +1,28 @@
+﻿---
+ID: "3ba514f2-3a36-40fd-b225-6564a590276b"
+Parent: "0bf777d9-9a8a-4110-a7bb-cbfcdc1e3f7b"
+Template: "4cdecc81-2ed1-4363-aa3a-8c423ad1b6e2"
+Path: /sitecore/content/Sam/ATV/Options/Button Styles/Green
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: software/16x16/component_green.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191111T173259Z
+    - ID: "52308596-bf9b-4652-96c5-a1f649e2c46a"
+      Hint: Class
+      Value: "btn-success"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

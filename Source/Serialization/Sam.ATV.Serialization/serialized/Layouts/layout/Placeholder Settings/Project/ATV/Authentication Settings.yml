@@ -1,0 +1,14 @@
+﻿---
+ID: "0a7218cb-44a1-4b11-8b63-d7455445d892"
+Parent: "0be41804-1550-4173-b362-91a66d9f0179"
+Template: "c3b037a0-46e5-4b67-ac7a-a144b962a56f"
+Path: /sitecore/layout/Placeholder Settings/Project/ATV/Authentication Settings
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191111T181128Z

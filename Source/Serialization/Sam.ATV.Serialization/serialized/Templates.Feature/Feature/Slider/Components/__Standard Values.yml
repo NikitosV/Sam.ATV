@@ -1,0 +1,18 @@
+﻿---
+ID: "55629282-c9a3-41fa-988e-978233fb7b67"
+Parent: "51248990-b643-4b19-be5e-b0660b574428"
+Template: "51248990-b643-4b19-be5e-b0660b574428"
+Path: /sitecore/templates/Feature/Slider/Components/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191111T132026Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

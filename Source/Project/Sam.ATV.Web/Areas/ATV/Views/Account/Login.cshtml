@@ -1,0 +1,55 @@
+﻿@using Sitecore.Mvc
+
+@{
+    Layout = null;
+}
+
+<form style="background-color: #f7f9fc; vertical-align:central;" class="text-center border border-light p-5 mb-4 col-md-6 offset-md-3 needs-validation" method="post" novalidate>
+    <p class="h4 mb-4">Sign in</p>
+    <div>
+        <input type="email" asp-for="Email" id="defaultLoginFormEmail" class="form-control mb-2 col-md-8 offset-md-2" placeholder="E-mail" required pattern="^(?=.*[.]).{1,}$">
+        <span asp-validation-for="Email" class="invalid-feedback">
+            Please, write correct Email!
+        </span>
+    </div>
+
+    <div>
+        <input type="password" asp-for="Password" id="defaultLoginFormPassword" class="form-control mb-2 col-md-8 offset-md-2" placeholder="Password" required>
+        <span asp-validation-for="Password" class="invalid-feedback">
+            Password cannot be empty!
+        </span>
+    </div>
+
+    <button class="btn btn-info btn-block my-4 col-md-6 offset-md-3" type="submit">Sign in</button>
+    <p>
+        Not a member?
+    </p>
+    <div>
+        @Html.Sitecore().Placeholder("Register Placeholder")
+    </div>
+</form>
+
+<script type="text/javascript">
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            var forms = document.getElementsByClassName('needs-validation');
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        if ($('#popupdiv').html() != '') {
+            $("#popupdiv").show();
+        }
+    });
+</script>

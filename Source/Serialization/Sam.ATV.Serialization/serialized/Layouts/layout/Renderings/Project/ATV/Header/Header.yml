@@ -1,0 +1,18 @@
+﻿---
+ID: "4d433b24-b19f-4401-a3cf-e706a561f04f"
+Parent: "21d357af-37a6-4ab6-9e97-aa8542158976"
+Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
+Path: /sitecore/layout/Renderings/Project/ATV/Header/Header
+DB: master
+SharedFields:
+- ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
+  Hint: Path
+  Value: /Areas/ATV/Views/Header/Header.cshtml
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191111T124324Z

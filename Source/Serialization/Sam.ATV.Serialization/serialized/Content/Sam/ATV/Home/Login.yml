@@ -1,0 +1,81 @@
+﻿---
+ID: "49b937c9-aac5-4944-ac53-b13e2d342933"
+Parent: "5d4187d4-22a3-4867-aab2-d9dcb7b36986"
+Template: "cbc45bc7-9556-4348-869c-345295b2810b"
+Path: /sitecore/content/Sam/ATV/Home/Login
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/16x16/photo_portrait.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{3366A26E-001E-41E5-8D4C-9849A42DC65D}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{B4EAFDFB-90B6-4AF2-B7AC-1AE6A991A0FC}"
+              p:before="*"
+              s:ds="{2E22B406-1F00-49B5-B65C-777EB60CABBB}"
+              s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
+              s:par="Style={3997B68D-189A-4085-9110-BF9574A2A250}"
+              s:ph="/LoginContent/Register Placeholder" />
+            <r
+              uid="{9290727C-DA76-409A-9C58-956DED1DC078}"
+              p:after="r[@uid='{B4EAFDFB-90B6-4AF2-B7AC-1AE6A991A0FC}']"
+              s:ds="{335169BC-2D7B-4091-9B19-C04A361FB59B}"
+              s:id="{4E21A96A-E256-4AA0-BAA1-327C9F5E782E}"
+              s:ph="LoginContent" />
+            <r
+              uid="{661827BF-5B8A-414E-B308-6ACFCD21F703}"
+              p:after="r[@uid='{9290727C-DA76-409A-9C58-956DED1DC078}']"
+              s:ds="{96FF82B9-1EB7-4722-872B-23D39A8242B8}"
+              s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
+              s:par="Style={BC01E1E4-D3CE-4413-AF60-2C1E33C2D2D2}"
+              s:ph="/Header/Button Placeholder" />
+            <r
+              uid="{36B825E7-E77D-40C5-9402-DBCCF88B89F5}"
+              p:after="r[@uid='{661827BF-5B8A-414E-B308-6ACFCD21F703}']"
+              s:ds="{B8972D78-3077-462A-A1D3-C1CE6FFE6C16}"
+              s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
+              s:ph="/Header/Button Placeholder" />
+            <r
+              uid="{922F1EBA-5F2D-48CE-9F3C-FBF350DE78E9}"
+              p:after="r[@uid='{36B825E7-E77D-40C5-9402-DBCCF88B89F5}']"
+              s:ds="{EF28094F-2902-4EA0-B688-7B609EED2A7A}"
+              s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
+              s:ph="/Header/Button Placeholder" />
+            <r
+              uid="{BABE48E5-8026-450A-AAFB-DC1CFE0E0AF9}"
+              p:after="*[1=2]"
+              s:id="{4D433B24-B19F-4401-A3CF-E706A561F04F}"
+              s:ph="Header" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191111T174754Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

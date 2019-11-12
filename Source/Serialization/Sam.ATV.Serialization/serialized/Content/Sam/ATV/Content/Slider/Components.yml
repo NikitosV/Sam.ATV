@@ -1,0 +1,14 @@
+﻿---
+ID: "1e04eaad-40aa-48ad-8337-8539c3981ea3"
+Parent: "7c39606c-07fe-4840-aaab-19238edb07d1"
+Template: "51248990-b643-4b19-be5e-b0660b574428"
+Path: /sitecore/content/Sam/ATV/Content/Slider/Components
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191111T132043Z

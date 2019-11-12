@@ -1,0 +1,28 @@
+﻿---
+ID: "ca0e5c5b-a91d-4114-a865-6602458ab670"
+Parent: "0bf777d9-9a8a-4110-a7bb-cbfcdc1e3f7b"
+Template: "4cdecc81-2ed1-4363-aa3a-8c423ad1b6e2"
+Path: /sitecore/content/Sam/ATV/Options/Button Styles/Red
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Software/16x16/component_red.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 150
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191111T173153Z
+    - ID: "52308596-bf9b-4652-96c5-a1f649e2c46a"
+      Hint: Class
+      Value: "btn-danger"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

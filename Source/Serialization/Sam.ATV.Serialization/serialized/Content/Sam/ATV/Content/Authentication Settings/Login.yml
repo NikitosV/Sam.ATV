@@ -1,0 +1,14 @@
+﻿---
+ID: "335169bc-2d7b-4091-9b19-c04a361fb59b"
+Parent: "81962b3e-a939-48ef-b6ad-7c4571c6bdf0"
+Template: "cbc45bc7-9556-4348-869c-345295b2810b"
+Path: /sitecore/content/Sam/ATV/Content/Authentication Settings/Login
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191112T115603Z

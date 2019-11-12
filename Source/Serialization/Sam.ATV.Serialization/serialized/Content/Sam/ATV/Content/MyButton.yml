@@ -1,0 +1,18 @@
+﻿---
+ID: "d5d14b80-3b29-4386-a2e0-4eedc2715566"
+Parent: "42f22200-9fa6-49d6-947f-c2ded8add582"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/Sam/ATV/Content/MyButton
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191111T144427Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

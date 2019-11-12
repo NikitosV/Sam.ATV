@@ -1,0 +1,72 @@
+﻿---
+ID: "f3b53f2a-3f07-4d76-9e85-c3d71e76521b"
+Parent: "5d4187d4-22a3-4867-aab2-d9dcb7b36986"
+Template: "76d47283-7051-4e9c-aef4-f2cfae34f902"
+Path: /sitecore/content/Sam/ATV/Home/Contact Us
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/16x16/document.png
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{0D1324A2-245F-43AC-9576-4346C42A616E}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{26E5380C-ED23-4162-AFE4-018C8DB492AB}"
+              p:before="*"
+              s:ds="{AAE2AAC3-261C-4207-B881-7FCC16D61D91}"
+              s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
+              s:par="Style={430F8EA3-A01E-46C5-A1FF-B28E2B47C1D8}"
+              s:ph="/Header/Login Placeholder" />
+            <r
+              uid="{52A7426A-8860-4A3B-A0E5-7D8BAB0127DE}"
+              p:after="r[@uid='{26E5380C-ED23-4162-AFE4-018C8DB492AB}']"
+              s:ds="{96FF82B9-1EB7-4722-872B-23D39A8242B8}"
+              s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
+              s:par="Style={BC01E1E4-D3CE-4413-AF60-2C1E33C2D2D2}"
+              s:ph="/Header/Button Placeholder" />
+            <r
+              uid="{D4D24539-D55C-41BA-A759-61D673A042F6}"
+              p:after="r[@uid='{52A7426A-8860-4A3B-A0E5-7D8BAB0127DE}']"
+              s:ds="{B8972D78-3077-462A-A1D3-C1CE6FFE6C16}"
+              s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
+              s:ph="/Header/Button Placeholder" />
+            <r
+              uid="{43EF9EE6-D97F-4D85-98DE-8E8E8192CD9F}"
+              p:after="r[@uid='{D4D24539-D55C-41BA-A759-61D673A042F6}']"
+              s:ds="{EF28094F-2902-4EA0-B688-7B609EED2A7A}"
+              s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
+              s:par="Style"
+              s:ph="/Header/Button Placeholder" />
+            <r
+              uid="{2142C503-149D-4336-9D95-FF311B902E90}"
+              p:after="*[1=2]"
+              s:id="{4D433B24-B19F-4401-A3CF-E706A561F04F}"
+              s:ph="Header" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191111T171219Z
+    - ID: "cca1da9c-5669-4eb6-9ac1-6bccba56581b"
+      Hint: Title
+      Value: Contact Us

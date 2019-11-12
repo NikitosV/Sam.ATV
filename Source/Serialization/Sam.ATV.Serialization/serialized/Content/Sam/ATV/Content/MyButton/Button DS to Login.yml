@@ -1,0 +1,22 @@
+﻿---
+ID: "aae2aac3-261c-4207-b881-7fcc16d61d91"
+Parent: "d5d14b80-3b29-4386-a2e0-4eedc2715566"
+Template: "18c2623d-a821-4011-9c80-c32f2098dd75"
+Path: /sitecore/content/Sam/ATV/Content/MyButton/Button DS to Login
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19c74f78-55f7-4a54-a0ca-38d8c2f3159f"
+      Hint: Link
+      Value: |
+        <link linktype="internal" querystring="" target="" id="{49B937C9-AAC5-4944-AC53-B13E2D342933}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191112T100333Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

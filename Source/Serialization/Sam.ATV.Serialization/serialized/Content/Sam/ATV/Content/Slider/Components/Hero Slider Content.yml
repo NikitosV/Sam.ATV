@@ -1,0 +1,25 @@
+﻿---
+ID: "19f8b595-f01b-422b-9664-9b40cb79ce6e"
+Parent: "1e04eaad-40aa-48ad-8337-8539c3981ea3"
+Template: "23956eba-b061-4316-a014-b3e0e2946504"
+Path: /sitecore/content/Sam/ATV/Content/Slider/Components/Hero Slider Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191111T132647Z
+    - ID: "54876239-61a2-4347-8450-66343479b471"
+      Hint: Hero Images
+      Type: Treelist
+      Value: |
+        {1560C60D-7248-4FB1-8BDF-DFF304D95D34}
+        {B2B5977F-CDD9-4DBC-8D79-207FD4B2A014}
+        {F22C2461-96CA-44BB-B33B-1674099B9839}
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

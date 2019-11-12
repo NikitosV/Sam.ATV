@@ -1,0 +1,22 @@
+﻿---
+ID: "b8972d78-3077-462a-a1d3-c1ce6ffe6c16"
+Parent: "d5d14b80-3b29-4386-a2e0-4eedc2715566"
+Template: "18c2623d-a821-4011-9c80-c32f2098dd75"
+Path: /sitecore/content/Sam/ATV/Content/MyButton/Button DS to Bikes
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19c74f78-55f7-4a54-a0ca-38d8c2f3159f"
+      Hint: Link
+      Value: |
+        <link linktype="internal" querystring="" target="" id="{3B6E69F5-8D1C-41F3-A9CC-4E5383C2F265}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191111T172149Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

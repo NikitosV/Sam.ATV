@@ -1,0 +1,18 @@
+﻿---
+ID: "0bf777d9-9a8a-4110-a7bb-cbfcdc1e3f7b"
+Parent: "4fc32f45-0c6c-4742-b515-ca897481d5bc"
+Template: "e0cc2f91-8dab-4519-bb13-a979812727f5"
+Path: /sitecore/content/Sam/ATV/Options/Button Styles
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: People/16x16/palette.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191111T144731Z

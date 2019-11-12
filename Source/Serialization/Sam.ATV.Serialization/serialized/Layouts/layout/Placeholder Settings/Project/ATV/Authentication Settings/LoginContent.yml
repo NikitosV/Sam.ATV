@@ -1,0 +1,22 @@
+﻿---
+ID: "12abd6f9-d0c6-475f-9b39-5aeab8d92f2c"
+Parent: "0a7218cb-44a1-4b11-8b63-d7455445d892"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Project/ATV/Authentication Settings/LoginContent
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: LoginContent
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: "{4E21A96A-E256-4AA0-BAA1-327C9F5E782E}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191111T181201Z

@@ -1,0 +1,18 @@
+﻿---
+ID: "0d7fcf03-3368-47f8-9154-42bf51301e16"
+Parent: "d96f97b7-a613-4b79-8b0b-82f4d2f280be"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/MyButton/Button Rendering Parameter Template/Fields Data
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191111T144240Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

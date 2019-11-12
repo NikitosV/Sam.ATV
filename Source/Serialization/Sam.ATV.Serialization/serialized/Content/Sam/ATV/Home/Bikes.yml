@@ -1,0 +1,71 @@
+﻿---
+ID: "3b6e69f5-8d1c-41f3-a9cc-4e5383c2f265"
+Parent: "5d4187d4-22a3-4867-aab2-d9dcb7b36986"
+Template: "76d47283-7051-4e9c-aef4-f2cfae34f902"
+Path: /sitecore/content/Sam/ATV/Home/Bikes
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/16x16/document.png
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{8D0A4E3C-1CE2-49EE-8BC9-72CC4C1E316C}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{3797091F-38C7-4B02-85F8-1FA7F838CAF4}"
+              p:before="*"
+              s:ds="{AAE2AAC3-261C-4207-B881-7FCC16D61D91}"
+              s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
+              s:par="Style={430F8EA3-A01E-46C5-A1FF-B28E2B47C1D8}"
+              s:ph="/Header/Login Placeholder" />
+            <r
+              uid="{7407DEDE-B79A-4D48-8997-FB156C37D4C0}"
+              p:after="r[@uid='{3797091F-38C7-4B02-85F8-1FA7F838CAF4}']"
+              s:ds="{96FF82B9-1EB7-4722-872B-23D39A8242B8}"
+              s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
+              s:par="Style={BC01E1E4-D3CE-4413-AF60-2C1E33C2D2D2}"
+              s:ph="/Header/Button Placeholder" />
+            <r
+              uid="{3B4EE4B3-BAF4-4A8C-99B1-8B1966FD384E}"
+              p:after="r[@uid='{7407DEDE-B79A-4D48-8997-FB156C37D4C0}']"
+              s:ds="{B8972D78-3077-462A-A1D3-C1CE6FFE6C16}"
+              s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
+              s:ph="/Header/Button Placeholder" />
+            <r
+              uid="{8FF010F3-3993-48BE-A223-83DF8EB21286}"
+              p:after="r[@uid='{3B4EE4B3-BAF4-4A8C-99B1-8B1966FD384E}']"
+              s:ds="{EF28094F-2902-4EA0-B688-7B609EED2A7A}"
+              s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
+              s:ph="/Header/Button Placeholder" />
+            <r
+              uid="{26402BFB-9B9F-43FC-A28A-32BEE862E621}"
+              p:after="*[1=2]"
+              s:id="{4D433B24-B19F-4401-A3CF-E706A561F04F}"
+              s:ph="Header" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191111T171204Z
+    - ID: "cca1da9c-5669-4eb6-9ac1-6bccba56581b"
+      Hint: Title
+      Value: Bikes

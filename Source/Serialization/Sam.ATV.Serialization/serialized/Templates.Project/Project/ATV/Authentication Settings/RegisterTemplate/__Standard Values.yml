@@ -1,0 +1,21 @@
+﻿---
+ID: "0da4f72c-7bd2-4cf2-9f09-8186a0f21af2"
+Parent: "15e09c00-e893-4248-97ab-a160a5af169a"
+Template: "15e09c00-e893-4248-97ab-a160a5af169a"
+Path: /sitecore/templates/Project/ATV/Authentication Settings/RegisterTemplate/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191111T180906Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "f884972b-b790-435c-94ae-d717d748d7c5"
+      Hint: Footer
+      Value: Sam Solutions

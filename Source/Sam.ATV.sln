@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sam.ATV.Web", "Project\Sam.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sam.ATV.Serialization", "Serialization\Sam.ATV.Serialization\Sam.ATV.Serialization.csproj", "{789EF5D0-9839-4DAA-B53E-1ABA174BD1A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sam.Feature.MyButton", "Feature\Sam.Feature.MyButton\Sam.Feature.MyButton.csproj", "{D03C2539-59A4-4DB0-BB72-E19B4771FD41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sam.Feature.Slider", "Feature\Sam.Feature.Slider\Sam.Feature.Slider.csproj", "{210E5F42-CCF1-4C63-8868-DEC62174DABC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +33,14 @@ Global
 		{789EF5D0-9839-4DAA-B53E-1ABA174BD1A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{789EF5D0-9839-4DAA-B53E-1ABA174BD1A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{789EF5D0-9839-4DAA-B53E-1ABA174BD1A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D03C2539-59A4-4DB0-BB72-E19B4771FD41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D03C2539-59A4-4DB0-BB72-E19B4771FD41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D03C2539-59A4-4DB0-BB72-E19B4771FD41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D03C2539-59A4-4DB0-BB72-E19B4771FD41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{210E5F42-CCF1-4C63-8868-DEC62174DABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{210E5F42-CCF1-4C63-8868-DEC62174DABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{210E5F42-CCF1-4C63-8868-DEC62174DABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{210E5F42-CCF1-4C63-8868-DEC62174DABC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +48,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{C69BC053-8A65-4A06-A844-E7B957F3BDFB} = {D9113BAF-8BC0-427A-8D84-75C7A27E0912}
 		{789EF5D0-9839-4DAA-B53E-1ABA174BD1A2} = {7005540F-7444-4CB8-AFDC-18BF4EEEBEAB}
+		{D03C2539-59A4-4DB0-BB72-E19B4771FD41} = {3174C4FF-99E3-49AE-814F-680759D5270F}
+		{210E5F42-CCF1-4C63-8868-DEC62174DABC} = {3174C4FF-99E3-49AE-814F-680759D5270F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {395B8A59-E537-4C4A-97F8-3F6A5FC50D89}

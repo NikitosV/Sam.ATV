@@ -1,0 +1,14 @@
+﻿---
+ID: "0be41804-1550-4173-b362-91a66d9f0179"
+Parent: "6726d423-67f8-40e5-9109-8b981be66c84"
+Template: "c3b037a0-46e5-4b67-ac7a-a144b962a56f"
+Path: /sitecore/layout/Placeholder Settings/Project/ATV
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191111T122643Z
