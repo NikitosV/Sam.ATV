@@ -1,22 +1,22 @@
 ﻿---
-ID: "010d46a7-6016-4239-88a8-6f22925e38da"
-Parent: "8164e15d-3d45-4121-8d1e-fcc23e10c326"
+ID: "b90e1306-2706-4b20-9f82-59c35284eb6e"
+Parent: "45843690-e990-4d63-98c7-6afec8a343c7"
 Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
-Path: /sitecore/layout/Renderings/Project/ATV/Bikes/AllBikes
+Path: /sitecore/layout/Renderings/Feature/BikeCard/BikeCard
 DB: master
 SharedFields:
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
-  Value: /sitecore/templates/Project/ATV/Entities/Bike
+  Value: /sitecore/templates/Feature/BikeCard/BikeCard
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: /sitecore/content/Sam/ATV/Content/Bikes
+  Value: /sitecore/content/Sam/ATV/Data/Bikes
 - ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
   Hint: Controller Action
-  Value: Bike
+  Value: BikeCardIndex
 - ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
   Hint: Controller
-  Value: Sam.ATV.Web.Areas.ATV.Controllers.BikeController, Sam.ATV.Web
+  Value: Sam.Feature.BikeCard.Areas.BikeCard.Controllers.BikeCardContentController, Sam.Feature.BikeCard
 Languages:
 - Language: en
   Versions:
@@ -24,4 +24,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20191112T130515Z
+      Value: 20191113T122949Z
