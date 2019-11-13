@@ -190,6 +190,7 @@
     <Content Include="App_Config\Include\Glass.Mapper.Sc.config" />
     <Content Include="App_Config\Include\Glass.Mapper.Sc.CodeFirst.config.exclude" />
     <Content Include="Areas\ATV\Views\Bike\Bike.cshtml" />
+    <Content Include="Areas\ATV\Views\Contact\Index.cshtml" />
     <None Include="Global.asax" />
     <Content Include="App_Config\Include\zzz.Sam.ATV.Web\zzz.Sam.ATV.config">
       <SubType>Designer</SubType>
@@ -251,6 +252,7 @@
     <Compile Include="Areas\ATV\ATVAreaRegistration.cs" />
     <Compile Include="Areas\ATV\Controllers\AccountController.cs" />
     <Compile Include="Areas\ATV\Controllers\BikeController.cs" />
+    <Compile Include="Areas\ATV\Controllers\ContactController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
