@@ -8,9 +8,9 @@ namespace Sam.Feature.BikeCard.Areas.BikeCard.Services
     {
         private readonly IContentRepository _repository;
 
-        public BikeCardService()
+        public BikeCardService(IContentRepository repository)
         {
-            _repository = new SitecoreContentRepository();
+            _repository = repository; //new SitecoreContentRepository();
         }
 
         public IBikeCardClass GetBikeCardContent(string contentGuid)

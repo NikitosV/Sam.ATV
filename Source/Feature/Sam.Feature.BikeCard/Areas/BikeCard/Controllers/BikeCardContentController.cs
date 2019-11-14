@@ -10,9 +10,9 @@ namespace Sam.Feature.BikeCard.Areas.BikeCard.Controllers
     {
         private readonly IBikeCardService _bikeCardService;
 
-        public BikeCardContentController()
+        public BikeCardContentController(IBikeCardService bikeCardService)
         {
-            _bikeCardService = new BikeCardService();
+            _bikeCardService = bikeCardService; // new BikeCardService();
         }
 
         public ViewResult BikeCardIndex()

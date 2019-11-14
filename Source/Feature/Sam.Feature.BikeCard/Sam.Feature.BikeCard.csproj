@@ -174,6 +174,7 @@
   <ItemGroup>
     <Content Include="Areas\BikeCard\Views\web.config" />
     <Content Include="Areas\BikeCard\Views\BikeCardContent\BikeCardIndex.cshtml" />
+    <Content Include="App_Config\Include\Sam.Feature.BikeCard.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
@@ -188,6 +189,7 @@
     <Compile Include="Areas\BikeCard\Repositories\IBikeCardRepository.cs" />
     <Compile Include="Areas\BikeCard\Services\BikeCardService.cs" />
     <Compile Include="Areas\BikeCard\Services\IBikeCardService.cs" />
+    <Compile Include="Pipelines\InitializeContainer\RegisterDependencies.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -203,6 +205,10 @@
     <Folder Include="Areas\BikeCard\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Foundation\IoC\Sam.Foundation.IoC\Sam.Foundation.IoC.csproj">
+      <Project>{eeae3f74-d3cb-4984-a9a7-a4cce24a3c00}</Project>
+      <Name>Sam.Foundation.IoC</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Foundation\Model\Sam.Foundation.Model\Sam.Foundation.Model.csproj">
       <Project>{E8D37772-A207-4F5D-8B83-1868C222F503}</Project>
       <Name>Sam.Foundation.Model</Name>
