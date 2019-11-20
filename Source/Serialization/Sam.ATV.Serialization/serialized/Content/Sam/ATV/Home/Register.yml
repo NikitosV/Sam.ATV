@@ -10,7 +10,7 @@ SharedFields:
   Value: Network/16x16/id_card.png
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 50
+  Value: 100
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -54,8 +54,14 @@ Languages:
               s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
               s:ph="/Header/Button Placeholder" />
             <r
-              uid="{C6BF765A-8BF3-4D57-9F83-813827C6E7FB}"
+              uid="{DE6ABADD-935F-4D17-AC3B-095EA6C3093C}"
               p:after="r[@uid='{078FF920-1457-4E6C-BCD6-7F85EBF4C9F7}']"
+              s:ds="{2DD6A842-7CEB-4C57-85BE-0560A266C9E8}"
+              s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
+              s:ph="/Header/Button Placeholder" />
+            <r
+              uid="{C6BF765A-8BF3-4D57-9F83-813827C6E7FB}"
+              p:after="r[@uid='{DE6ABADD-935F-4D17-AC3B-095EA6C3093C}']"
               s:ds="{EF28094F-2902-4EA0-B688-7B609EED2A7A}"
               s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
               s:ph="/Header/Button Placeholder" />

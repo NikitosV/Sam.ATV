@@ -1,0 +1,15 @@
+﻿<div class="container">
+    <div class="form-inline align-content-center" id="pagination">
+        <span class="btn-outline-dark btn-dark mr-1 disabled pagination-info">Page <span id="page-index-info"></span> of <span id="page-total"></span></span>
+        @*<input type="button" class="btn btn-outline-dark first-button" value="FIRST" onclick="FirstPage()" />*@
+        <input type="button" class="btn btn-outline-dark second-button" value="<<" onclick="PreviousPage()" />
+        <input type="button" class="btn btn-outline-dark pagination-info" id="page-index" disabled />
+        <input type="button" class="btn btn-outline-dark second-button " value=">>" onclick="NextPage()" />
+        @*<input type="button" class="btn btn-outline-dark first-button" value="LAST" onclick="LastPage()" />*@
+        @*<select class="form-control" id="page-size" style="width: 70px" onchange="SizePageChange()">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+        </select>*@
+    </div>
+</div>

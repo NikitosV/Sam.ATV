@@ -1,8 +1,8 @@
 ﻿---
-ID: "055bccbe-0f54-4f14-a2b6-ae0cc0dda1eb"
-Parent: "dd9a7625-ce17-47b5-b838-980788a3eb59"
-Template: "a8990ef3-8813-4790-9b53-a0225846b017"
-Path: /sitecore/content/Sam/ATV/Data/Bikes/Bike 3
+ID: "86ac41a5-16ca-4bbd-bd21-dd67c791d26d"
+Parent: "e1834af3-6415-41d7-ad6c-4b00833202f8"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/Feature/TripCard
 DB: master
 Languages:
 - Language: en
@@ -11,7 +11,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20191113T124903Z
+      Value: 20191115T093429Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

@@ -1,0 +1,37 @@
+﻿---
+ID: "1962ff4b-94e9-4c96-95a3-88fac9c3d2c9"
+Parent: "55cf8be2-08ff-4dc6-af02-1310ce6c54da"
+Template: "55cf8be2-08ff-4dc6-af02-1310ce6c54da"
+Path: /sitecore/templates/Feature/TripCard/TripCard/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "09efcd45-15e1-4732-b9ca-80edb4c319b8"
+      Hint: StartDate
+      Value: 20191115T114000Z
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191115T114018Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "7f3f531d-69ca-480f-8995-a7ffd1008f52"
+      Hint: Description
+      Value: example
+    - ID: "aadd3d1c-1f66-4cda-8e6f-3c6bea7e0cea"
+      Hint: Price
+      Value: 0
+    - ID: "bfc53bb3-75e3-4e2e-ad3b-db8294993bdb"
+      Hint: Image
+      Value: |
+        <image mediaid="{1E0C26CF-6D78-4EA2-A1DD-E532810D82A4}" />
+    - ID: "c87ce1b1-2cff-47b4-94f1-8217b0e5235e"
+      Hint: Title
+      Value: test
+    - ID: "dafdb3b3-844d-47e7-a013-f175c6d4ce3d"
+      Hint: EndDate
+      Value: 20191115T114000Z

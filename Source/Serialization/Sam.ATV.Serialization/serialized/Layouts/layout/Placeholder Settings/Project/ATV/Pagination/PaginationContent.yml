@@ -1,0 +1,22 @@
+﻿---
+ID: "a7ea6c92-76ec-4632-86a9-1fc74d4c9968"
+Parent: "c60e2288-2878-4290-91e4-5c4717c8335b"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Project/ATV/Pagination/PaginationContent
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: PaginationContent
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: "{C0ECED43-E3A4-4728-B940-65C5A3E4F13C}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191119T102333Z

@@ -1,0 +1,22 @@
+﻿---
+ID: "cea2dcd5-2bca-49bb-8191-ddb391d84e32"
+Parent: "95b80113-9343-49d8-ae75-2bf500433974"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Project/ATV/SearchPL/SearchTrip
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: SearchTrip
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: "{E1C29FD9-C5A2-4DEF-8780-4B0350130B0F}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191120T125120Z

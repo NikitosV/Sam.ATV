@@ -1,0 +1,61 @@
+﻿@using Sitecore.Mvc
+@model Sam.ATV.Web.Areas.ATV.Models.ViewModels.SearchResultsViewModel
+
+<style>
+    .card img {
+        width: 100%;
+        height: 225px;
+    }
+</style>
+@if (Model.Results.Count != 0)
+{
+    <div class="row mt-2">
+        @foreach (var result in Model.Results)
+        {
+
+            <div class="col-md-4 align-self-between">
+                <div class="card mb-4 shadow-sm">
+                    <div class="view view-cascade overlay">
+                        <img class="bd-placeholder-img card-img-top" alt="Card image cap" src="@result.ImgUrl" />
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <div class="card-body card-body-cascade">
+                        <p class="card-text">
+                            <div>
+                                <b>Name:</b> @result.BikeName
+                            </div>
+                            <div>
+                                <b>Type Engine:</b> @result.TypeEngine
+                            </div>
+                            <div>
+                                <b>Max Speed:</b> @result.MaxSpeed km / hour
+                            </div>
+                            <div>
+                                <b>Fuel:</b>@result.Fuel L / 100 km
+                            </div>
+                            <div>
+                                <b>Description:</b> @result.Description
+                            </div>
+                            <div>
+                                <b>Price:</b> @result.Price $
+                            </div>
+                        </p>
+                        <hr />
+                        <button class="btn btn-sm btn-outline-success" type="submit">Buy</button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <h2 class="text-center text-danger display-4">Empty result!</h2>
+}
+
+<script>
+    pageTotal = @Model.CountBikes;
+    $('#page-total').text(Math.round(pageTotal / pageSize));
+</script>

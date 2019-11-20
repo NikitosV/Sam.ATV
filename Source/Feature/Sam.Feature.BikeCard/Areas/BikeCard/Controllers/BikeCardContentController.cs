@@ -24,7 +24,8 @@ namespace Sam.Feature.BikeCard.Areas.BikeCard.Controllers
                 var bikeCardContent = _bikeCardService.GetBikeCardContent(RenderingContext.Current.Rendering.DataSource);
                 if (bikeCardContent != null)
                 {
-                    viewModel.Id = bikeCardContent.Id.ToString();
+                    viewModel.Id = bikeCardContent.Id;
+                    viewModel.Image = bikeCardContent.Image.Src;
                     viewModel.Name = bikeCardContent.Name;
                     viewModel.TypeEngine = bikeCardContent.TypeEngine;
                     viewModel.MaxSpeed = bikeCardContent.MaxSpeed;

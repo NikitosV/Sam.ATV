@@ -1,0 +1,22 @@
+﻿---
+ID: "f824e4ef-39f3-47a6-b10a-75a996fa7e52"
+Parent: "95b80113-9343-49d8-ae75-2bf500433974"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Project/ATV/SearchPL/SearchBike
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: SearchBike
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: "{4B4E591E-BB00-4CA7-9BC9-DEE587AA0FC6}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191118T151232Z

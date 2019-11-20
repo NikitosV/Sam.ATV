@@ -1,0 +1,56 @@
+﻿---
+ID: "0aa27968-1bab-49d0-bacb-5095ecf0a9dc"
+Parent: "dd9a7625-ce17-47b5-b838-980788a3eb59"
+Template: "a8990ef3-8813-4790-9b53-a0225846b017"
+Path: /sitecore/content/Sam/ATV/Data/Bikes/ATV 4
+DB: master
+SharedFields:
+- ID: "39c4902e-9960-4469-aeef-e878e9c8218f"
+  Hint: __Hidden
+  Type: Checkbox
+  Value: 0
+- ID: "9dafca1d-d618-4616-86b8-a8acd6b28a63"
+  Hint: __Bucket Parent Reference
+  Value: 
+- ID: "c9283d9e-7c29-4419-9c28-5a5c8ff53e84"
+  Hint: __Bucketable
+  Type: Checkbox
+  Value: 1
+- ID: "d312103c-b36c-4ca5-864a-c85f9abda503"
+  Hint: __Is Bucket
+  Type: Checkbox
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "22858345-e9b9-4f3b-988b-e09de154174e"
+      Hint: Type Engine
+      Value: Single Rotor
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191114T110455Z
+    - ID: "40c3a99e-4004-48c1-bc58-49a56bf96b38"
+      Hint: Description
+      Value: Slowly but strong
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "64d5a0a7-bb56-4e3c-8305-d520cfcf10dc"
+      Hint: Fuel
+      Value: 45
+    - ID: "691d78ed-04d7-48fa-b538-7437e52c633b"
+      Hint: Name
+      Value: ZIL
+    - ID: "84b948fb-cb54-4b30-94f9-d1fe29101629"
+      Hint: Image
+      Value: |
+        <image mediaid="{D833D007-AB6F-4567-9A71-722D2C2E9DD3}" />
+    - ID: "c3df6960-2dd2-4c00-9503-1bb16d779c2f"
+      Hint: Max Speed
+      Value: 56
+    - ID: "efba20b9-f9be-4285-9107-16e722a629d8"
+      Hint: Price
+      Value: 530

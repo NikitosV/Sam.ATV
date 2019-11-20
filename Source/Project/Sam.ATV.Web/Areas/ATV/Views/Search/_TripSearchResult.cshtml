@@ -1,0 +1,61 @@
+﻿@using Sitecore.Mvc
+@model Sam.ATV.Web.Areas.ATV.Models.ViewModels.TripSearchResultsViewModel
+
+
+<style>
+    .card img {
+        width: 100%;
+        height: 325px;
+    }
+</style>
+
+@if (Model.Results.Count != 0)
+{
+    <div class="row mt-2">
+        @foreach (var result in Model.Results)
+        {
+            <div class="col-md-6">
+                @*align-self-between*@
+                <div class="card mb-4 shadow-sm">
+                    <div class="view view-cascade overlay">
+                        <img class="bd-placeholder-img card-img-top" alt="Card image cap" src="@result.ImgUrl" />
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        @* card-body-cascade*@
+                        <p class="card-text">
+                            <div>
+                                <b>Title:</b> @result.Title
+                            </div>
+                            <div>
+                                <b>Description:</b> @result.Description
+                            </div>
+                            <div>
+                                <b>Start Date:</b> @result.StartDate
+                            </div>
+                            <div>
+                                <b>End Date:</b> @result.EndDate
+                            </div>
+                            <div>
+                                <b>Price:</b> @result.Price $
+                            </div>
+                        </p>
+                        <hr />
+                        <button class="btn btn-sm btn-outline-success" type="submit">Want</button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <h2 class="text-center text-danger display-4">Empty result!</h2>
+}
+
+<script>
+    pageTotal = @Model.CountTrips;
+    $('#page-total').text(Math.round(pageTotal / pageSize));
+</script>

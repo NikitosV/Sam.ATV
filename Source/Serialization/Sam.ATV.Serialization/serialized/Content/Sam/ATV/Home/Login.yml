@@ -60,8 +60,14 @@ Languages:
               s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
               s:ph="/Header/Button Placeholder" />
             <r
-              uid="{922F1EBA-5F2D-48CE-9F3C-FBF350DE78E9}"
+              uid="{21C5E780-46CD-41C3-8846-C6CA57D10F2C}"
               p:after="r[@uid='{36B825E7-E77D-40C5-9402-DBCCF88B89F5}']"
+              s:ds="{2DD6A842-7CEB-4C57-85BE-0560A266C9E8}"
+              s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
+              s:ph="/Header/Button Placeholder" />
+            <r
+              uid="{922F1EBA-5F2D-48CE-9F3C-FBF350DE78E9}"
+              p:after="r[@uid='{21C5E780-46CD-41C3-8846-C6CA57D10F2C}']"
               s:ds="{EF28094F-2902-4EA0-B688-7B609EED2A7A}"
               s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
               s:ph="/Header/Button Placeholder" />

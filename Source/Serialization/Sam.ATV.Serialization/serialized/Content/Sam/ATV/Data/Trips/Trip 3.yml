@@ -1,0 +1,24 @@
+﻿---
+ID: "e01ee338-4e8c-41a8-841d-bc5177caef89"
+Parent: "0575c48f-6e01-4b5a-a417-ad0eb22e86cd"
+Template: "55cf8be2-08ff-4dc6-af02-1310ce6c54da"
+Path: /sitecore/content/Sam/ATV/Data/Trips/Trip 3
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191115T114135Z
+    - ID: "aadd3d1c-1f66-4cda-8e6f-3c6bea7e0cea"
+      Hint: Price
+      Value: 3000
+    - ID: "bfc53bb3-75e3-4e2e-ad3b-db8294993bdb"
+      Hint: Image
+      Value: |
+        <image mediaid="{64FCDC30-FFCD-4426-A1F4-B6846319478F}" />
+    - ID: "c87ce1b1-2cff-47b4-94f1-8217b0e5235e"
+      Hint: Title
+      Value: Simple trip and sand

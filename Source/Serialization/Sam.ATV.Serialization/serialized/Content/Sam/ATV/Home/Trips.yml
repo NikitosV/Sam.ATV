@@ -1,0 +1,111 @@
+﻿---
+ID: "4c065294-93a3-4cbf-8479-98b98b4af894"
+Parent: "5d4187d4-22a3-4867-aab2-d9dcb7b36986"
+Template: "76d47283-7051-4e9c-aef4-f2cfae34f902"
+Path: /sitecore/content/Sam/ATV/Home/Trips
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 250
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{38F37181-3632-48FE-8D62-2583074CED33}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{F7636D18-EA38-4B5C-9154-8873676810C6}"
+              p:before="*"
+              s:id="{E1C29FD9-C5A2-4DEF-8780-4B0350130B0F}"
+              s:ph="SearchTrip" />
+            <r
+              uid="{5F86D8F0-6E25-43DB-BCB4-38467435DC68}"
+              p:after="r[@uid='{F7636D18-EA38-4B5C-9154-8873676810C6}']"
+              s:id="{C0ECED43-E3A4-4728-B940-65C5A3E4F13C}"
+              s:ph="PaginationContent" />
+            <r
+              uid="{06DCE1CD-3CD0-45E9-AF40-DCE13EB10E31}"
+              p:after="r[@uid='{5F86D8F0-6E25-43DB-BCB4-38467435DC68}']"
+              s:ds="{3A6E3F25-1FE4-4106-8A2F-CB6C562A7A30}"
+              s:id="{05B6D637-15F3-4B5F-9526-8E35DA1300D8}"
+              s:ph="MainContent" />
+            <r
+              uid="{04E6D917-B40A-443C-87DB-B8AD44761B4A}"
+              p:after="r[@uid='{06DCE1CD-3CD0-45E9-AF40-DCE13EB10E31}']"
+              s:ds="{514FB1A0-A341-4522-9485-8B640BC59D03}"
+              s:id="{05B6D637-15F3-4B5F-9526-8E35DA1300D8}"
+              s:ph="MainContent" />
+            <r
+              uid="{AB053916-D34C-436D-B825-84C808C0B83C}"
+              p:after="r[@uid='{04E6D917-B40A-443C-87DB-B8AD44761B4A}']"
+              s:ds="{E01EE338-4E8C-41A8-841D-BC5177CAEF89}"
+              s:id="{05B6D637-15F3-4B5F-9526-8E35DA1300D8}"
+              s:ph="MainContent" />
+            <r
+              uid="{D3959EEB-0B7B-41AB-9059-9088CD32C11B}"
+              p:after="r[@uid='{AB053916-D34C-436D-B825-84C808C0B83C}']"
+              s:ds="{B674C10E-0E4F-4827-B4A0-0886AC649F2B}"
+              s:id="{05B6D637-15F3-4B5F-9526-8E35DA1300D8}"
+              s:ph="MainContent" />
+            <r
+              uid="{E2551F1F-7EBB-4746-A0BB-B3633AAEC894}"
+              p:after="r[@uid='{D3959EEB-0B7B-41AB-9059-9088CD32C11B}']"
+              s:ds="{AAE2AAC3-261C-4207-B881-7FCC16D61D91}"
+              s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
+              s:par="Style={430F8EA3-A01E-46C5-A1FF-B28E2B47C1D8}"
+              s:ph="/Header/Login Placeholder" />
+            <r
+              uid="{5BFAD4C6-1CCB-478F-AE24-5F36ACD91D87}"
+              p:after="r[@uid='{E2551F1F-7EBB-4746-A0BB-B3633AAEC894}']"
+              s:ds="{96FF82B9-1EB7-4722-872B-23D39A8242B8}"
+              s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
+              s:par="Style={BC01E1E4-D3CE-4413-AF60-2C1E33C2D2D2}"
+              s:ph="/Header/Button Placeholder" />
+            <r
+              uid="{1DCF4844-8517-4144-87B7-5BFDFE4B74FB}"
+              p:after="r[@uid='{5BFAD4C6-1CCB-478F-AE24-5F36ACD91D87}']"
+              s:ds="{B8972D78-3077-462A-A1D3-C1CE6FFE6C16}"
+              s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
+              s:ph="/Header/Button Placeholder" />
+            <r
+              uid="{91E0AE4D-B6B4-4B81-B961-78DA7F50195C}"
+              p:after="r[@uid='{1DCF4844-8517-4144-87B7-5BFDFE4B74FB}']"
+              s:ds="{2DD6A842-7CEB-4C57-85BE-0560A266C9E8}"
+              s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
+              s:ph="/Header/Button Placeholder" />
+            <r
+              uid="{8C9488E4-011E-43A1-BB47-2EB68C243E42}"
+              p:after="r[@uid='{91E0AE4D-B6B4-4B81-B961-78DA7F50195C}']"
+              s:ds="{EF28094F-2902-4EA0-B688-7B609EED2A7A}"
+              s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
+              s:ph="/Header/Button Placeholder" />
+            <r
+              uid="{832934CC-F79F-4001-AEBC-F620CF5B781B}"
+              p:after="*[1=2]"
+              s:id="{4D433B24-B19F-4401-A3CF-E706A561F04F}"
+              s:ph="Header" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191115T100415Z
+    - ID: "cca1da9c-5669-4eb6-9ac1-6bccba56581b"
+      Hint: Title
+      Value: Trips

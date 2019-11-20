@@ -4,7 +4,7 @@
 @using Sitecore.Data.Items
 @using Sitecore.Resources.Media
 
-<link rel="stylesheet" href="~/Script/SliderCss.css" />
+@*<link rel="stylesheet" href="~/Script/SliderCss.css" />*@
 
 @if (Model != null)
 {
@@ -23,7 +23,10 @@
                 {
                     heroImages = heroImagesField.GetItems();
                 }
-
+                @*<div class="carousel-caption">
+                    <h3 class="h3-responsive" style="color: cadetblue">Welcom to ATVmarketsite</h3>
+                    <p>There you find all you want!</p>
+                </div>*@
                 if (heroImages != null)
                 {
                     int i = 1;
@@ -31,10 +34,10 @@
                     {
                         var mediaItem = (MediaItem)image;
                         <div class="carousel-item @(i == 1 ? "active" : "")">
-                            <img src="@MediaManager.GetMediaUrl(mediaItem)"/>
+                            <img src="@MediaManager.GetMediaUrl(mediaItem)" style="width: 100%; height: 50%" />
                             @*<div class="carousel-caption d-none d-md-block">
-                                    <a class="btn btn-primary" href="#" role="button">See our Providers</a>
-                                </div>*@
+                            <a class="btn btn-primary" href="#" role="button">See our Providers</a>
+                        </div>*@
                         </div>
                         i++;
                     }

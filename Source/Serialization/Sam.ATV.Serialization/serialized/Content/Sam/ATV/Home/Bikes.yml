@@ -8,6 +8,9 @@ SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
   Value: Applications/16x16/document.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -31,18 +34,28 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{3797091F-38C7-4B02-85F8-1FA7F838CAF4}"
+              uid="{6A18A07B-E1AE-4BEF-868F-68515E25DA0B}"
               p:before="*"
+              s:id="{C0ECED43-E3A4-4728-B940-65C5A3E4F13C}"
+              s:ph="PaginationContent" />
+            <r
+              uid="{2769BBCA-ED3B-4D0F-BCF2-686FC7DD474A}"
+              p:after="r[@uid='{6A18A07B-E1AE-4BEF-868F-68515E25DA0B}']"
+              s:id="{4B4E591E-BB00-4CA7-9BC9-DEE587AA0FC6}"
+              s:ph="SearchBike" />
+            <r
+              uid="{3797091F-38C7-4B02-85F8-1FA7F838CAF4}"
+              p:after="r[@uid='{2769BBCA-ED3B-4D0F-BCF2-686FC7DD474A}']"
               s:ds="{AAE2AAC3-261C-4207-B881-7FCC16D61D91}"
               s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
-              s:par="Style=%7b430F8EA3-A01E-46C5-A1FF-B28E2B47C1D8%7d"
+              s:par="Style={430F8EA3-A01E-46C5-A1FF-B28E2B47C1D8}"
               s:ph="/Header/Login Placeholder" />
             <r
               uid="{7407DEDE-B79A-4D48-8997-FB156C37D4C0}"
               p:after="r[@uid='{3797091F-38C7-4B02-85F8-1FA7F838CAF4}']"
               s:ds="{96FF82B9-1EB7-4722-872B-23D39A8242B8}"
               s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
-              s:par="Style=%7bBC01E1E4-D3CE-4413-AF60-2C1E33C2D2D2%7d"
+              s:par="Style={BC01E1E4-D3CE-4413-AF60-2C1E33C2D2D2}"
               s:ph="/Header/Button Placeholder" />
             <r
               uid="{3B4EE4B3-BAF4-4A8C-99B1-8B1966FD384E}"
@@ -51,8 +64,14 @@ Languages:
               s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
               s:ph="/Header/Button Placeholder" />
             <r
-              uid="{8FF010F3-3993-48BE-A223-83DF8EB21286}"
+              uid="{D64BE477-C09B-4898-8C51-E29ABCB42516}"
               p:after="r[@uid='{3B4EE4B3-BAF4-4A8C-99B1-8B1966FD384E}']"
+              s:ds="{2DD6A842-7CEB-4C57-85BE-0560A266C9E8}"
+              s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
+              s:ph="/Header/Button Placeholder" />
+            <r
+              uid="{8FF010F3-3993-48BE-A223-83DF8EB21286}"
+              p:after="r[@uid='{D64BE477-C09B-4898-8C51-E29ABCB42516}']"
               s:ds="{EF28094F-2902-4EA0-B688-7B609EED2A7A}"
               s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
               s:ph="/Header/Button Placeholder" />

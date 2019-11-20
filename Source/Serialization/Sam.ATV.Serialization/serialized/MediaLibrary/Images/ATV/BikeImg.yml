@@ -1,8 +1,8 @@
 ﻿---
-ID: "07f24174-e12c-4afd-b1e0-4bcec99fc153"
-Parent: "dd9a7625-ce17-47b5-b838-980788a3eb59"
-Template: "a8990ef3-8813-4790-9b53-a0225846b017"
-Path: /sitecore/content/Sam/ATV/Data/Bikes/Bike 4
+ID: "44d968cc-1834-429b-a619-9e8aadcbb9de"
+Parent: "e5b68085-5c9e-4bb3-9f49-a63e8b108a54"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/Images/ATV/BikeImg
 DB: master
 Languages:
 - Language: en
@@ -11,7 +11,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20191113T124917Z
+      Value: 20191114T102544Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

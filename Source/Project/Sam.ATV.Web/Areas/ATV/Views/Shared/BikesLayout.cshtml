@@ -17,15 +17,14 @@
         @Html.Sitecore().Placeholder("Header")
     </div>
     <div class="container">
-        <input class="form-control mb-3" type="text" placeholder="Search" aria-label="Search">
-        <div class="border text-center">
-            <div class="row">
-                @Html.Sitecore().Placeholder("MainContent")
-            </div>
+        <div>
+            @Html.Sitecore().Placeholder("SearchBike")
+        </div>
+        <div>
+            @Html.Sitecore().Placeholder("PaginationContent")
         </div>
     </div>
-    @*<footer class="page-footer font-small blue pt-4">*@
-    <footer class="footer mt-auto py-3 fixed-bottom">
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
         <div class="footer-copyright text-center py-3">
             © 2019 Copyright: @Html.Sitecore().Field("Footer")
         </div>

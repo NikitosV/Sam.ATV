@@ -8,6 +8,9 @@ SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
   Value: Applications/16x16/document.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -57,8 +60,14 @@ Languages:
               s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
               s:ph="/Header/Button Placeholder" />
             <r
-              uid="{43EF9EE6-D97F-4D85-98DE-8E8E8192CD9F}"
+              uid="{964CDDB1-B625-4801-BCD9-A8734D5AE2F5}"
               p:after="r[@uid='{D4D24539-D55C-41BA-A759-61D673A042F6}']"
+              s:ds="{2DD6A842-7CEB-4C57-85BE-0560A266C9E8}"
+              s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
+              s:ph="/Header/Button Placeholder" />
+            <r
+              uid="{43EF9EE6-D97F-4D85-98DE-8E8E8192CD9F}"
+              p:after="r[@uid='{964CDDB1-B625-4801-BCD9-A8734D5AE2F5}']"
               s:ds="{EF28094F-2902-4EA0-B688-7B609EED2A7A}"
               s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
               s:par="Style"

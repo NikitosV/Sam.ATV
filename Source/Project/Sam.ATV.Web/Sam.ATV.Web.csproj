@@ -79,6 +79,18 @@
     <Reference Include="RazorGenerator.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
       <HintPath>..\..\packages\RazorGenerator.Mvc.2.4.9\lib\net40\RazorGenerator.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="SimpleInjector, Version=4.7.1.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SimpleInjector.4.7.1\lib\net45\SimpleInjector.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Abstractions, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Sitecore.Abstractions.8.2.180406\lib\NET452\Sitecore.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Sitecore.ContentSearch.8.2.180406\lib\NET452\Sitecore.ContentSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.Linq, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Sitecore.ContentSearch.Linq.8.2.180406\lib\NET452\Sitecore.ContentSearch.Linq.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Sitecore.Kernel.8.2.180406\lib\NET452\Sitecore.Kernel.dll</HintPath>
     </Reference>
@@ -191,6 +203,13 @@
     <Content Include="App_Config\Include\Glass.Mapper.Sc.CodeFirst.config.exclude" />
     <Content Include="Areas\ATV\Views\Bike\Bike.cshtml" />
     <Content Include="Areas\ATV\Views\Contact\Index.cshtml" />
+    <Content Include="Areas\ATV\Views\Shared\TripsLayout.cshtml" />
+    <Content Include="Areas\ATV\Views\Search\BikeSearch.cshtml" />
+    <Content Include="Areas\ATV\Views\Search\_BikeSearchResult.cshtml" />
+    <Content Include="App_Config\Include\zzz.Sam.ATV.Web\Sam.ATV.RegisterRoutes.config" />
+    <Content Include="Areas\ATV\Views\Pagination\PaginationView.cshtml" />
+    <Content Include="Areas\ATV\Views\Search\TripSearch.cshtml" />
+    <Content Include="Areas\ATV\Views\Search\_TripSearchResult.cshtml" />
     <None Include="Global.asax" />
     <Content Include="App_Config\Include\zzz.Sam.ATV.Web\zzz.Sam.ATV.config">
       <SubType>Designer</SubType>
@@ -253,9 +272,22 @@
     <Compile Include="Areas\ATV\Controllers\AccountController.cs" />
     <Compile Include="Areas\ATV\Controllers\BikeController.cs" />
     <Compile Include="Areas\ATV\Controllers\ContactController.cs" />
+    <Compile Include="Areas\ATV\Controllers\SearchController.cs" />
+    <Compile Include="Areas\ATV\Logic\Services\ISearchService.cs" />
+    <Compile Include="Areas\ATV\Logic\Services\SearchService.cs" />
+    <Compile Include="Areas\ATV\Models\BikeSearchResult.cs" />
+    <Compile Include="Areas\ATV\Models\TripSearchResult.cs" />
+    <Compile Include="Areas\ATV\Models\ViewModels\BikeSearchViewModel.cs" />
+    <Compile Include="Areas\ATV\Models\ViewModels\SearchResultsViewModel.cs" />
+    <Compile Include="Areas\ATV\Models\ViewModels\SearchResultViewModel.cs" />
+    <Compile Include="Areas\ATV\Models\ViewModels\TripSearchResultsViewModel.cs" />
+    <Compile Include="Areas\ATV\Models\ViewModels\TripSearchResultViewModel.cs" />
+    <Compile Include="Areas\ATV\Models\ViewModels\TripSearchViewModel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Pipelines\InitializeContainer\RegisterDependencies.cs" />
+    <Compile Include="Pipelines\RegisterRoutes\RegisterRoutes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -267,15 +299,34 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Areas\ATV\Logic\" />
-    <Folder Include="Areas\ATV\Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Feature\Sam.Feature.BikeCard\Sam.Feature.BikeCard.csproj">
+      <Project>{4DD6FC11-0B83-45A6-8873-3F5741B8F14C}</Project>
+      <Name>Sam.Feature.BikeCard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Feature\Sam.Feature.TripCard\Sam.Feature.TripCard.csproj">
+      <Project>{69586CAA-824E-410A-BC57-16786BAC4CAE}</Project>
+      <Name>Sam.Feature.TripCard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Foundation\IoC\Sam.Foundation.IoC\Sam.Foundation.IoC.csproj">
+      <Project>{eeae3f74-d3cb-4984-a9a7-a4cce24a3c00}</Project>
+      <Name>Sam.Foundation.IoC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Foundation\Model\Sam.Foundation.Model\Sam.Foundation.Model.csproj">
+      <Project>{e8d37772-a207-4f5d-8b83-1868c222f503}</Project>
+      <Name>Sam.Foundation.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Foundation\Repository\Sam.Foundation.Repository\Sam.Foundation.Repository.csproj">
+      <Project>{dc181e1f-d1cf-4e5a-bdce-2f36211063ff}</Project>
+      <Name>Sam.Foundation.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

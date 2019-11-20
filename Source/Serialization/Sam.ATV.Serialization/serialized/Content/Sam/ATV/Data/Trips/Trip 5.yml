@@ -1,0 +1,17 @@
+﻿---
+ID: "97a22270-0de0-466f-813f-3793c44065af"
+Parent: "0575c48f-6e01-4b5a-a417-ad0eb22e86cd"
+Template: "55cf8be2-08ff-4dc6-af02-1310ce6c54da"
+Path: /sitecore/content/Sam/ATV/Data/Trips/Trip 5
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191120T125440Z
+    - ID: "aadd3d1c-1f66-4cda-8e6f-3c6bea7e0cea"
+      Hint: Price
+      Value: 100
