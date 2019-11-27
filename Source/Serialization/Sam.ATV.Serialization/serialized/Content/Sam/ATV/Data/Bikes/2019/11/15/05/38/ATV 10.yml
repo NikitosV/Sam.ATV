@@ -1,0 +1,51 @@
+﻿---
+ID: "b2cb3a87-e2c6-4881-9f87-571fb7a1c9eb"
+Parent: "42f8323d-ac81-4e8b-a631-34ec64539f94"
+Template: "a8990ef3-8813-4790-9b53-a0225846b017"
+Path: /sitecore/content/Sam/ATV/Data/Bikes/2019/11/15/05/38/ATV 10
+DB: master
+SharedFields:
+- ID: "9dafca1d-d618-4616-86b8-a8acd6b28a63"
+  Hint: __Bucket Parent Reference
+  Value: "{DD9A7625-CE17-47B5-B838-980788A3EB59}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 125
+- ID: "c9283d9e-7c29-4419-9c28-5a5c8ff53e84"
+  Hint: __Bucketable
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "22858345-e9b9-4f3b-988b-e09de154174e"
+      Hint: Type Engine
+      Value: Speed
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191115T053828Z
+    - ID: "40c3a99e-4004-48c1-bc58-49a56bf96b38"
+      Hint: Description
+      Value: fdswgfdsgs
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "64d5a0a7-bb56-4e3c-8305-d520cfcf10dc"
+      Hint: Fuel
+      Value: 34
+    - ID: "691d78ed-04d7-48fa-b538-7437e52c633b"
+      Hint: Name
+      Value: Suzuki
+    - ID: "84b948fb-cb54-4b30-94f9-d1fe29101629"
+      Hint: Image
+      Value: |
+        <image mediaid="{2255CC50-1E00-4EC4-AFE2-53DE9CE54BD6}" />
+    - ID: "c3df6960-2dd2-4c00-9503-1bb16d779c2f"
+      Hint: Max Speed
+      Value: 120
+    - ID: "efba20b9-f9be-4285-9107-16e722a629d8"
+      Hint: Price
+      Value: 1200

@@ -210,6 +210,7 @@
     <Content Include="Areas\ATV\Views\Pagination\PaginationView.cshtml" />
     <Content Include="Areas\ATV\Views\Search\TripSearch.cshtml" />
     <Content Include="Areas\ATV\Views\Search\_TripSearchResult.cshtml" />
+    <Content Include="Areas\ATV\Views\Content\TriplePanel.cshtml" />
     <None Include="Global.asax" />
     <Content Include="App_Config\Include\zzz.Sam.ATV.Web\zzz.Sam.ATV.config">
       <SubType>Designer</SubType>
@@ -272,9 +273,20 @@
     <Compile Include="Areas\ATV\Controllers\AccountController.cs" />
     <Compile Include="Areas\ATV\Controllers\BikeController.cs" />
     <Compile Include="Areas\ATV\Controllers\ContactController.cs" />
+    <Compile Include="Areas\ATV\Controllers\OrderController.cs" />
     <Compile Include="Areas\ATV\Controllers\SearchController.cs" />
+    <Compile Include="Areas\ATV\Logic\GlobalLogic.cs" />
+    <Compile Include="Areas\ATV\Logic\Services\AccountService.cs" />
+    <Compile Include="Areas\ATV\Logic\Services\ContactService.cs" />
+    <Compile Include="Areas\ATV\Logic\Services\IAccountService.cs" />
+    <Compile Include="Areas\ATV\Logic\Services\IContactService.cs" />
+    <Compile Include="Areas\ATV\Logic\Services\IOrderService.cs" />
     <Compile Include="Areas\ATV\Logic\Services\ISearchService.cs" />
+    <Compile Include="Areas\ATV\Logic\Services\OrderService.cs" />
     <Compile Include="Areas\ATV\Logic\Services\SearchService.cs" />
+    <Compile Include="Areas\ATV\Models\Account\AccountProfile.cs" />
+    <Compile Include="Areas\ATV\Models\Account\ViewModels\LoginViewModel.cs" />
+    <Compile Include="Areas\ATV\Models\Account\ViewModels\RegisterViewModel.cs" />
     <Compile Include="Areas\ATV\Models\BikeSearchResult.cs" />
     <Compile Include="Areas\ATV\Models\TripSearchResult.cs" />
     <Compile Include="Areas\ATV\Models\ViewModels\BikeSearchViewModel.cs" />
@@ -299,7 +311,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Areas\ATV\Views\Order\" />
+  </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>

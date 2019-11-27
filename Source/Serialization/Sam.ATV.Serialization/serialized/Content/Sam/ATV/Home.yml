@@ -34,8 +34,19 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{B17A78A8-830D-4F7F-ABB8-5D24071108DD}"
+              uid="{602D07CC-B530-4CD4-83CD-30427A9FFEAB}"
               p:before="*"
+              s:id="{71969343-3DEC-4C77-B08C-E8D50A35A9D9}"
+              s:ph="PanelContent" />
+            <r
+              uid="{D1F1DB27-B3CB-4667-AA00-046E6428C8D7}"
+              p:after="r[@uid='{602D07CC-B530-4CD4-83CD-30427A9FFEAB}']"
+              s:ds="{19F8B595-F01B-422B-9664-9B40CB79CE6E}"
+              s:id="{A19CA50F-AB75-4B5E-B83D-3535B2E6A1CE}"
+              s:ph="SliderContent" />
+            <r
+              uid="{B17A78A8-830D-4F7F-ABB8-5D24071108DD}"
+              p:after="r[@uid='{D1F1DB27-B3CB-4667-AA00-046E6428C8D7}']"
               s:id="{4B4E591E-BB00-4CA7-9BC9-DEE587AA0FC6}"
               s:ph="SearchBike" />
             <r
@@ -50,18 +61,52 @@ Languages:
               s:id="{B90E1306-2706-4B20-9F82-59C35284EB6E}"
               s:ph="MainContent" />
             <r
-              uid="{46B606E3-FA5E-419D-9CB0-E509D9FFDA00}"
-              p:after="r[@uid='{F87B1D7B-3935-44EF-9347-030088C49AA0}']"
-              s:ds="{19F8B595-F01B-422B-9664-9B40CB79CE6E}"
-              s:id="{A19CA50F-AB75-4B5E-B83D-3535B2E6A1CE}"
-              s:ph="SliderContent" />
-            <r
               uid="{744B2136-C8D9-485F-85A5-545FDE183F79}"
-              p:after="r[@uid='{46B606E3-FA5E-419D-9CB0-E509D9FFDA00}']"
+              p:after="r[@uid='{F87B1D7B-3935-44EF-9347-030088C49AA0}']"
               s:ds="{AAE2AAC3-261C-4207-B881-7FCC16D61D91}"
               s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
               s:par="Style={430F8EA3-A01E-46C5-A1FF-B28E2B47C1D8}"
-              s:ph="/Header/Login Placeholder" />
+              s:ph="/Header/Login Placeholder">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{FCF195FD-A7E6-4DCA-A719-4226C8BBFDBD}"
+                    s:name="Hide login">
+                    <conditions>
+                      <condition
+                        uid="BD88A31B78F44670BACD540B3A6B9637"
+                        s:id="{B88D5A83-A909-4BC5-90E7-7A8804348CFA}"
+                        s:value="extranet\User" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="7DAB6937E631485B980903B31097C2CD"
+                        s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{301EB012-69B7-4254-8DB6-6251C2EE8410}"
+                    s:name="Show Login">
+                    <conditions>
+                      <condition
+                        uid="5B2331745C7141FF85280DE412DF0CB3"
+                        s:id="{EA0642FA-500B-4B2F-B264-765E771C516F}" />
+                    </conditions>
+                    <actions />
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="D64AA34D509241AD99C5612A63A1B21C"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions />
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
             <r
               uid="{89C25ED6-17B8-4A65-A1D9-9D8EF447F99D}"
               p:after="r[@uid='{744B2136-C8D9-485F-85A5-545FDE183F79}']"

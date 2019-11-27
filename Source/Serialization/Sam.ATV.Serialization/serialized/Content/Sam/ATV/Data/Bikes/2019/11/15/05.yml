@@ -1,0 +1,14 @@
+﻿---
+ID: "2419766a-f03b-43aa-a4bb-22d4d5276014"
+Parent: "18cb4dcd-a142-4cd5-aab2-da610dcf929f"
+Template: "adb6ca4f-03ef-4f47-b9ac-9ce2ba53ff97"
+Path: /sitecore/content/Sam/ATV/Data/Bikes/2019/11/15/05
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191125T132419Z

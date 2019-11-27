@@ -1,0 +1,18 @@
+﻿---
+ID: "f3428840-a343-4116-8373-59566e3b4ad6"
+Parent: "670f3170-cdf1-481f-a5f7-891248e364d0"
+Template: "4d06567a-3cc1-49fa-81a5-19400e23f995"
+Path: /sitecore/content/Sam/ATV/Users Data/A__tut_by
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191122T133203Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous

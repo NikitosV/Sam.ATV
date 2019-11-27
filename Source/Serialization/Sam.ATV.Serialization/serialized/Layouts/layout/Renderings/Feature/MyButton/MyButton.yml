@@ -13,7 +13,7 @@ SharedFields:
   Value: /sitecore/templates/Feature/MyButton/Button Data Source Template
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: /sitecore/content/Sam/ATV/Content/MyButton
+  Value: "query:/sitecore/content/Sam/ATV/Content/MyButton//*[@@templateid ='{18C2623D-A821-4011-9C80-C32F2098DD75}']"
 - ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
   Hint: Controller Action
   Value: MyButton

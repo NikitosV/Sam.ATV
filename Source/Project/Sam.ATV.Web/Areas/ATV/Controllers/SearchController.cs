@@ -87,3 +87,24 @@ namespace Sam.ATV.Web.Areas.ATV.Controllers
         }
     }
 }
+
+//public Provider ProviderIdByName(string name)
+//{
+//    using (var context = ContentSearchManager.GetIndex("sitecore_provider_index")
+//        .CreateSearchContext())
+//    {
+//        var query = context.GetQueryable<SearchResultItem>().Where(x => x["profilename_t"].Contains(name));
+//        var result = query.GetResults();
+
+//        if (result != null && result.TotalSearchResults > 0)
+//        {
+//            var item = result.Hits.Where(i => i.Document != null).Select(i => i.Document).FirstOrDefault();
+//            var service = new SitecoreService(Sitecore.Context.Database);
+
+//            Provider resultItem = service.CreateType<Provider>(item.GetItem());
+//            return resultItem;
+//        }
+//    }
+
+//    return null;
+//}

@@ -7,6 +7,7 @@
         height: 225px;
     }
 </style>
+
 @if (Model.Results.Count != 0)
 {
     <div class="row mt-2">
@@ -23,6 +24,7 @@
                     </div>
                     <div class="card-body card-body-cascade">
                         <p class="card-text">
+                            <input type="hidden" id="@result.Id" />
                             <div>
                                 <b>Name:</b> @result.BikeName
                             </div>
@@ -43,7 +45,10 @@
                             </div>
                         </p>
                         <hr />
-                        <button class="btn btn-sm btn-outline-success" type="submit">Buy</button>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <input type="button" class="btn btn-outline-success" id="@result.Id" value="Buy" onclick="BuyBike(this)">
+                        }
                     </div>
                 </div>
             </div>
@@ -58,4 +63,25 @@ else
 <script>
     pageTotal = @Model.CountBikes;
     $('#page-total').text(Math.round(pageTotal / pageSize));
+
+    let BuyBike = function (object) {
+
+        let bikeId = object.id;
+        debugger;
+        $.ajax({
+            url: "/Order/AddBikeToOrder",
+            method: "Post",
+            data: {
+                BikeId: bikeId
+            },
+            success: function (results) {
+                alert("Your order confirmed!")
+                //$('#search-results').html(results);
+            },
+            error: function (data) {
+
+                //$('#search-results-hotels').html('<h2>Ooops... No results.</h2>');
+            }
+        })
+    }
 </script>

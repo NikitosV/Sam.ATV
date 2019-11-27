@@ -4,82 +4,68 @@
     Layout = null;
 }
 
-<section class="contact-section my-5">
+<div class="contact-section my-5">
     <div class="card">
         <div class="row">
             <div class="col-lg-8">
-
                 <div class="card-body form">
-                    <!-- Header -->
                     <h3 class="mt-4"><i class="fas fa-envelope pr-2"></i>Write to us:</h3>
-
-                    <!-- Grid row -->
                     <div class="row">
-
-                        <!-- Grid column -->
                         <div class="col-md-6">
                             <div class="md-form mb-0">
                                 <input type="text" id="form-contact-name" class="form-control">
                                 <label for="form-contact-name" class="">Your name</label>
+                                <span asp-validation-for="Email" class="invalid-feedback">
+                                    Cannot be empty!
+                                </span>
                             </div>
                         </div>
-                        <!-- Grid column -->
-                        <!-- Grid column -->
                         <div class="col-md-6">
                             <div class="md-form mb-0">
-                                <input type="text" id="form-contact-email" class="form-control">
-                                <label for="form-contact-email" class="">Your email</label>
+                                <input type="text" id="form-contact-surname" class="form-control">
+                                <label for="form-contact-email" class="">Your surname</label>
+                                <span asp-validation-for="Email" class="invalid-feedback">
+                                    Cannot be empty!
+                                </span>
                             </div>
                         </div>
-                        <!-- Grid column -->
-
                     </div>
-                    <!-- Grid row -->
-                    <!-- Grid row -->
                     <div class="row">
-
-                        <!-- Grid column -->
                         <div class="col-md-6">
                             <div class="md-form mb-0">
-                                <input type="text" id="form-contact-phone" class="form-control">
+                                <input type="text" id="form-contact-phone" class="form-control"> @*required pattern="375[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}"*@
                                 <label for="form-contact-phone" class="">Your phone</label>
+                                <span asp-validation-for="Email" class="invalid-feedback">
+                                    Please, write correct phone!
+                                </span>
                             </div>
                         </div>
-                        <!-- Grid column -->
-                        <!-- Grid column -->
                         <div class="col-md-6">
                             <div class="md-form mb-0">
                                 <input type="text" id="form-contact-company" class="form-control">
                                 <label for="form-contact-company" class="">Your company</label>
+                                <span asp-validation-for="Email" class="invalid-feedback">
+                                    Cannot be empty!
+                                </span>
                             </div>
                         </div>
-                        <!-- Grid column -->
-
                     </div>
-                    <!-- Grid row -->
-                    <!-- Grid row -->
                     <div class="row">
-
-                        <!-- Grid column -->
                         <div class="col-md-12">
                             <div class="md-form mb-0">
                                 <textarea id="form-contact-message" class="form-control md-textarea" rows="3"></textarea>
                                 <label for="form-contact-message">Your message</label>
+                                <span asp-validation-for="Email" class="invalid-feedback">
+                                    Cannot be empty!
+                                </span>
                                 <a class="btn-floating btn-lg blue">
                                     <i class="far fa-paper-plane"></i>
                                 </a>
                             </div>
                         </div>
-                        <!-- Grid column -->
-
                     </div>
-                    <!-- Grid row -->
-
                 </div>
-
             </div>
-            <!-- Grid column -->
-            <!-- Grid column -->
             <div class="col-lg-4">
 
                 <div class="card-body contact text-center h-100 white-text">
@@ -97,33 +83,68 @@
                         </li>
                     </ul>
                     <hr class="hr-light my-4">
-                    <ul class="list-inline text-center list-unstyled">
-                        <li class="list-inline-item">
-                            <a class="p-2 fa-lg tw-ic">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="p-2 fa-lg li-ic">
-                                <i class="fab fa-linkedin-in"> </i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="p-2 fa-lg ins-ic">
-                                <i class="fab fa-instagram"> </i>
-                            </a>
-                        </li>
-                    </ul>
-
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <input type="button" class="btn btn-sm btn-outline-secondary" value="Write Us" onclick="WriteUs()">
+                    }
                 </div>
-
             </div>
-            <!-- Grid column -->
-
         </div>
-        <!-- Grid row -->
-
     </div>
-    <!-- Form with header -->
+</div>
 
-</section>
+<script>
+    debugger;
+    //(function () {
+    //    'use strict';
+    //    window.addEventListener('load', function () {
+    //        var forms = document.getElementsByClassName('needs-validation');
+    //        var validation = Array.prototype.filter.call(forms, function (form) {
+    //            form.addEventListener('submit', function (event) {
+    //                if (form.checkValidity() === false) {
+    //                    event.preventDefault();
+    //                    event.stopPropagation();
+    //                }
+    //                form.classList.add('was-validated');
+    //            }, false);
+    //        });
+    //    }, false);
+    //})();
+
+    let WriteUs = function () {
+
+        let contactName = $('#form-contact-name').val();
+        let contactSurname = $('#form-contact-surname').val();
+        let contactPhone = $('#form-contact-phone').val();
+        let contactCompany = $('#form-contact-company').val();
+        let contactMessage = $('#form-contact-message').val();
+
+        $.ajax({
+            url: "/Contact/AddSocialRev",
+            method: "Post",
+            data: {
+                ContactName: contactName,
+                ContactSurname: contactSurname,
+                ContactPhone: contactPhone,
+                ContactCompany: contactCompany,
+                ContactMessage: contactMessage
+            },
+            success: function (results) {
+                alert("We contact you!");
+                //$('#search-results').html(results);
+            },
+            error: function (data) {
+                alert("Cannot be empty!");
+                //$('#search-results-hotels').html('<h2>Ooops... No results.</h2>');
+            }
+        })
+    }
+
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        if ($('#popupdiv').html() != '') {
+            $("#popupdiv").show();
+        }
+    });
+</script>

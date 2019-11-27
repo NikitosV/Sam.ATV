@@ -85,3 +85,6 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\admin
+    - ID: "f884972b-b790-435c-94ae-d717d748d7c5"
+      Hint: NameField
+      Value: 

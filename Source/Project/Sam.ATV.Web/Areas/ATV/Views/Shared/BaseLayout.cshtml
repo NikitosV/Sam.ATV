@@ -1,9 +1,5 @@
 ﻿@using Sitecore.Mvc
 
-@{
-    Layout = null;
-}
-
 <!DOCTYPE html>
 
 <html>
@@ -25,6 +21,9 @@
         @*<div class="album bg-light text-left">
             @Html.Sitecore().Placeholder("MainContent")
         </div>*@
+        <div>
+            @Html.Sitecore().Placeholder("PanelContent")
+        </div>
         <div>
             @Html.Sitecore().Placeholder("SearchBike")
         </div>

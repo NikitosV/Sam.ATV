@@ -1,0 +1,18 @@
+﻿---
+ID: "c9a91b20-1502-4b92-91df-27abf966b7d6"
+Parent: "0be41804-1550-4173-b362-91a66d9f0179"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Project/ATV/PanelContent
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: PanelContent
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191122T153245Z

@@ -1,0 +1,25 @@
+﻿---
+ID: "f9892b38-1a8f-4d77-93c5-8b30fc8ce8c0"
+Parent: "08d7057c-369d-4900-9fa0-4bcd976216d8"
+Template: "acff893c-5e4d-479a-a9ee-319bb06e5bb4"
+Path: /sitecore/content/Sam/ATV/Data/Orders/sam__tut_by
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191125T162822Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\sam@tut.by
+    - ID: "9ee306a2-8da2-4ef6-a74c-dbf0e3a51ee4"
+      Hint: BikeId
+      Value: "{66D64DBE-29B5-4CC4-BAF4-49564E050149}"
+    - ID: "d76ce1db-65d6-46b3-817b-5b149ee9a46f"
+      Hint: EmailName
+      Value: |
+        extranet\sam@tut.by

@@ -1,5 +1,5 @@
 ﻿---
-ID: "f884972b-b790-435c-94ae-d717d748d7c5"
+ID: "e15dae15-ec58-4f69-b713-195281da2183"
 Parent: "d1a341b5-f772-4401-86f5-5394c3bf0de6"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
 Path: /sitecore/templates/Project/ATV/Authentication Settings/RegisterTemplate/Register Data/Footer
@@ -10,7 +10,7 @@ SharedFields:
   Value: "Single-Line Text"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 600
+  Value: 800
 Languages:
 - Language: en
   Versions:
@@ -18,4 +18,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20191111T180842Z
+      Value: 20191122T110846Z

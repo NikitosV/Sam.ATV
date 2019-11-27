@@ -1,0 +1,17 @@
+﻿---
+ID: "ddb78564-a32d-4bc2-ac09-1e31a40648ba"
+Parent: "670f3170-cdf1-481f-a5f7-891248e364d0"
+Template: "76d47283-7051-4e9c-aef4-f2cfae34f902"
+Path: /sitecore/content/Sam/ATV/Users Data/New BaseTemplate
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191125T132955Z
+    - ID: "cca1da9c-5669-4eb6-9ac1-6bccba56581b"
+      Hint: Title
+      Value: New BaseTemplate

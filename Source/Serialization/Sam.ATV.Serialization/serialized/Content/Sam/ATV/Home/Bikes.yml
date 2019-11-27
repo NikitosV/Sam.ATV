@@ -49,7 +49,46 @@ Languages:
               s:ds="{AAE2AAC3-261C-4207-B881-7FCC16D61D91}"
               s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
               s:par="Style={430F8EA3-A01E-46C5-A1FF-B28E2B47C1D8}"
-              s:ph="/Header/Login Placeholder" />
+              s:ph="/Header/Login Placeholder">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{4A62B8C2-5F47-4847-AED1-729D8D534C40}"
+                    s:name="Hide login">
+                    <actions>
+                      <action
+                        uid="1D48082A59144A61B1065026062A9B47"
+                        s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
+                    </actions>
+                    <conditions>
+                      <condition
+                        uid="8E963314408547898AB38E91CF918D11"
+                        s:id="{B88D5A83-A909-4BC5-90E7-7A8804348CFA}"
+                        s:value="extranet\User" />
+                    </conditions>
+                  </rule>
+                  <rule
+                    uid="{CCCC1349-C2AE-4AA9-AABB-627D483490B1}"
+                    s:name="Show login">
+                    <conditions>
+                      <condition
+                        uid="994D8BF6178242D79A05E50CC33835F4"
+                        s:id="{EA0642FA-500B-4B2F-B264-765E771C516F}" />
+                    </conditions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="E620262FD9054A8C9E1C66FBDDADA94C"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions />
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
             <r
               uid="{7407DEDE-B79A-4D48-8997-FB156C37D4C0}"
               p:after="r[@uid='{3797091F-38C7-4B02-85F8-1FA7F838CAF4}']"
