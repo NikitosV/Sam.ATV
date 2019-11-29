@@ -1,16 +1,13 @@
 ﻿---
-ID: "3b6e69f5-8d1c-41f3-a9cc-4e5383c2f265"
+ID: "9cd42f75-5502-444d-aef7-bd538715a7c1"
 Parent: "5d4187d4-22a3-4867-aab2-d9dcb7b36986"
 Template: "76d47283-7051-4e9c-aef4-f2cfae34f902"
-Path: /sitecore/content/Sam/ATV/Home/Bikes
+Path: /sitecore/content/Sam/ATV/Home/Profile
 DB: master
 SharedFields:
-- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
-  Hint: __Icon
-  Value: Applications/16x16/document.png
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 200
+  Value: 275
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -18,7 +15,7 @@ SharedFields:
     <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
-        l="{8D0A4E3C-1CE2-49EE-8BC9-72CC4C1E316C}" />
+        l="{CC408630-EB42-46B0-B62A-7F02B265FD58}" />
     </r>
 Languages:
 - Language: en
@@ -34,18 +31,23 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{6A18A07B-E1AE-4BEF-868F-68515E25DA0B}"
+              uid="{4AC9238A-8987-4312-B8AF-4EB968F69ABC}"
               p:before="*"
+              s:id="{C2CF8F98-A280-46CC-9F9C-E7F2AC14B9A5}"
+              s:ph="OrdersContent" />
+            <r
+              uid="{188B715E-0EAF-498B-AF33-8520B4358F29}"
+              p:after="r[@uid='{4AC9238A-8987-4312-B8AF-4EB968F69ABC}']"
+              s:id="{ABA146DA-A8A4-42B3-813A-5D35254B11AB}"
+              s:ph="ProfileContent" />
+            <r
+              uid="{2D5E46DF-6FA9-4A22-BD46-E6EDCC54D8D0}"
+              p:after="r[@uid='{188B715E-0EAF-498B-AF33-8520B4358F29}']"
               s:id="{C0ECED43-E3A4-4728-B940-65C5A3E4F13C}"
               s:ph="PaginationContent" />
             <r
-              uid="{2769BBCA-ED3B-4D0F-BCF2-686FC7DD474A}"
-              p:after="r[@uid='{6A18A07B-E1AE-4BEF-868F-68515E25DA0B}']"
-              s:id="{4B4E591E-BB00-4CA7-9BC9-DEE587AA0FC6}"
-              s:ph="SearchBike" />
-            <r
-              uid="{3797091F-38C7-4B02-85F8-1FA7F838CAF4}"
-              p:after="r[@uid='{2769BBCA-ED3B-4D0F-BCF2-686FC7DD474A}']"
+              uid="{9D731717-F830-435D-9AB5-43E4CDDBA004}"
+              p:after="r[@uid='{2D5E46DF-6FA9-4A22-BD46-E6EDCC54D8D0}']"
               s:ds="{AAE2AAC3-261C-4207-B881-7FCC16D61D91}"
               s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
               s:par="Style={430F8EA3-A01E-46C5-A1FF-B28E2B47C1D8}"
@@ -53,26 +55,26 @@ Languages:
               <rls>
                 <ruleset>
                   <rule
-                    uid="{4A62B8C2-5F47-4847-AED1-729D8D534C40}"
-                    s:name="Hide login">
-                    <actions>
-                      <action
-                        uid="1D48082A59144A61B1065026062A9B47"
-                        s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
-                    </actions>
+                    uid="{4AF979AF-9EC6-44C2-A1E1-11832F9CD9E6}"
+                    s:name="Hide Login">
                     <conditions>
                       <condition
-                        uid="8E963314408547898AB38E91CF918D11"
+                        uid="6E0733FEC31B437BBF8A392983A46816"
                         s:id="{B88D5A83-A909-4BC5-90E7-7A8804348CFA}"
                         s:value="extranet\User" />
                     </conditions>
+                    <actions>
+                      <action
+                        uid="B53419151F7048F6BF6704AEAD95C5BA"
+                        s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
+                    </actions>
                   </rule>
                   <rule
-                    uid="{CCCC1349-C2AE-4AA9-AABB-627D483490B1}"
-                    s:name="Show login">
+                    uid="{C2BCF840-E82F-41AC-8BC8-4EF8D38B256D}"
+                    s:name="Show Login">
                     <conditions>
                       <condition
-                        uid="994D8BF6178242D79A05E50CC33835F4"
+                        uid="E4E2FDDD1A8445A2B811B70892A79443"
                         s:id="{EA0642FA-500B-4B2F-B264-765E771C516F}" />
                     </conditions>
                   </rule>
@@ -81,7 +83,7 @@ Languages:
                     s:name="Default">
                     <conditions>
                       <condition
-                        uid="E620262FD9054A8C9E1C66FBDDADA94C"
+                        uid="2F481CB2DA164353B9BBAB2BD47F31BF"
                         s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
                     </conditions>
                     <actions />
@@ -90,8 +92,8 @@ Languages:
               </rls>
             </r>
             <r
-              uid="{623D8FA7-F60C-4877-90DF-D2629EE11021}"
-              p:after="r[@uid='{3797091F-38C7-4B02-85F8-1FA7F838CAF4}']"
+              uid="{AD35FE18-F3A0-4F76-9B85-8C062D8854C8}"
+              p:after="r[@uid='{9D731717-F830-435D-9AB5-43E4CDDBA004}']"
               s:ds="{0D767685-4375-4C6C-A610-122D74E0EEF1}"
               s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
               s:par="Style={430F8EA3-A01E-46C5-A1FF-B28E2B47C1D8}"
@@ -99,32 +101,40 @@ Languages:
               <rls>
                 <ruleset>
                   <rule
-                    uid="{9870E63E-B375-4D1B-A18C-4A14BB6F70F6}"
-                    s:name="Specify name...">
+                    uid="{5E85EE48-46C5-4DDC-B75D-A22010F94564}"
+                    s:name="Hide Profile for Admin">
+                    <actions>
+                      <action
+                        uid="988C39F17C7B407DAA7F5A264061B5E4"
+                        s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
+                    </actions>
                     <conditions>
-                      <or
-                        uid="EBEBEEEB9AE54B2D9C4AA21D1FFB783A">
-                        <condition
-                          uid="0A141E1769114701B89851B77BDB4883"
-                          s:id="{EA0642FA-500B-4B2F-B264-765E771C516F}" />
-                        <condition
-                          uid="0A0F3E96F814441FACC7EB5E73532EC2"
-                          s:id="{B88D5A83-A909-4BC5-90E7-7A8804348CFA}"
-                          s:value="sitecore\Developer|sitecore\Designer|sitecore\Author|sitecore\Sitecore Local Administrators" />
-                      </or>
+                      <condition
+                        uid="8597C615BDDA4F06A4A641AC35F7C5C5"
+                        s:id="{B88D5A83-A909-4BC5-90E7-7A8804348CFA}"
+                        s:value="sitecore\Developer|sitecore\Author|sitecore\Designer" />
+                    </conditions>
+                  </rule>
+                  <rule
+                    uid="{C5CC44C3-1757-4E53-9C12-ED62A9799E05}"
+                    s:name="Hide Profile">
+                    <conditions>
+                      <condition
+                        uid="AC536A53C69B4627B2D995CBFA5D15B6"
+                        s:id="{EA0642FA-500B-4B2F-B264-765E771C516F}" />
                     </conditions>
                     <actions>
                       <action
-                        uid="20718B6089E042B9B108E9FAABDCCA29"
+                        uid="F0342B074815458183C7353405AB7764"
                         s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
                     </actions>
                   </rule>
                   <rule
-                    uid="{3C445453-C6A8-4DAC-B9B1-A47F545CA55A}"
+                    uid="{8EBA9037-FBE8-4AA7-9B08-04BE960ED18A}"
                     s:name="Show Profile">
                     <conditions>
                       <condition
-                        uid="9CBA5921B6004DD1B28213DC46D9B8DD"
+                        uid="24B96CCE75BB41DDBE6DF219AC77B948"
                         s:id="{B88D5A83-A909-4BC5-90E7-7A8804348CFA}"
                         s:value="extranet\User" />
                     </conditions>
@@ -134,7 +144,7 @@ Languages:
                     s:name="Default">
                     <conditions>
                       <condition
-                        uid="8712880C3F054E0EB2449F6AA5F34D65"
+                        uid="CBD7F24878134B17BCA8003A27385D8C"
                         s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
                     </conditions>
                     <actions />
@@ -143,32 +153,32 @@ Languages:
               </rls>
             </r>
             <r
-              uid="{7407DEDE-B79A-4D48-8997-FB156C37D4C0}"
-              p:after="r[@uid='{623D8FA7-F60C-4877-90DF-D2629EE11021}']"
+              uid="{A5C1DB49-8204-4DDA-ACFE-AD1DBB42C55D}"
+              p:after="r[@uid='{AD35FE18-F3A0-4F76-9B85-8C062D8854C8}']"
               s:ds="{96FF82B9-1EB7-4722-872B-23D39A8242B8}"
               s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
               s:par="Style={BC01E1E4-D3CE-4413-AF60-2C1E33C2D2D2}"
               s:ph="/Header/Button Placeholder" />
             <r
-              uid="{3B4EE4B3-BAF4-4A8C-99B1-8B1966FD384E}"
-              p:after="r[@uid='{7407DEDE-B79A-4D48-8997-FB156C37D4C0}']"
+              uid="{1F3CD286-9071-45D0-978C-5A805D94BC43}"
+              p:after="r[@uid='{A5C1DB49-8204-4DDA-ACFE-AD1DBB42C55D}']"
               s:ds="{B8972D78-3077-462A-A1D3-C1CE6FFE6C16}"
               s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
               s:ph="/Header/Button Placeholder" />
             <r
-              uid="{D64BE477-C09B-4898-8C51-E29ABCB42516}"
-              p:after="r[@uid='{3B4EE4B3-BAF4-4A8C-99B1-8B1966FD384E}']"
+              uid="{86E85674-B67D-4E0A-9EDE-387ADB3802EB}"
+              p:after="r[@uid='{1F3CD286-9071-45D0-978C-5A805D94BC43}']"
               s:ds="{2DD6A842-7CEB-4C57-85BE-0560A266C9E8}"
               s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
               s:ph="/Header/Button Placeholder" />
             <r
-              uid="{8FF010F3-3993-48BE-A223-83DF8EB21286}"
-              p:after="r[@uid='{D64BE477-C09B-4898-8C51-E29ABCB42516}']"
+              uid="{3B4B53BB-69DA-4769-8BA8-0D30FB7F2C8E}"
+              p:after="r[@uid='{86E85674-B67D-4E0A-9EDE-387ADB3802EB}']"
               s:ds="{EF28094F-2902-4EA0-B688-7B609EED2A7A}"
               s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
               s:ph="/Header/Button Placeholder" />
             <r
-              uid="{26402BFB-9B9F-43FC-A28A-32BEE862E621}"
+              uid="{D1E0B693-779F-480A-837F-313B4DDBA19E}"
               p:after="*[1=2]"
               s:id="{4D433B24-B19F-4401-A3CF-E706A561F04F}"
               s:ph="Header" />
@@ -176,7 +186,7 @@ Languages:
         </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20191111T171204Z
+      Value: 20191128T104913Z
     - ID: "cca1da9c-5669-4eb6-9ac1-6bccba56581b"
       Hint: Title
-      Value: Bikes
+      Value: Profile

@@ -86,8 +86,61 @@ Languages:
               </rls>
             </r>
             <r
-              uid="{52A7426A-8860-4A3B-A0E5-7D8BAB0127DE}"
+              uid="{1E52D902-080A-44D8-8176-E8C99E84845A}"
               p:after="r[@uid='{26E5380C-ED23-4162-AFE4-018C8DB492AB}']"
+              s:ds="{0D767685-4375-4C6C-A610-122D74E0EEF1}"
+              s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
+              s:par="Style={430F8EA3-A01E-46C5-A1FF-B28E2B47C1D8}"
+              s:ph="/Header/Login Placeholder">
+              <rls>
+                <ruleset>
+                  <rule
+                    uid="{64344BBD-AEDA-48F8-8854-91F54962BC59}"
+                    s:name="Hide Profile">
+                    <actions>
+                      <action
+                        uid="BAC6DCFD993C42A88F74F06261DAED62"
+                        s:id="{25F351A1-712D-45F8-857D-8AD95BB2ACE9}" />
+                    </actions>
+                    <conditions>
+                      <or
+                        uid="E36E985E753C4B94A6CF4BDF879967F6">
+                        <condition
+                          uid="E286D543749942EC9DF1C39188EF24AB"
+                          s:id="{EA0642FA-500B-4B2F-B264-765E771C516F}" />
+                        <condition
+                          uid="1FC3AE7E284E4B3881E37FFE72F9D5EB"
+                          s:id="{B88D5A83-A909-4BC5-90E7-7A8804348CFA}"
+                          s:value="sitecore\Author|sitecore\Designer|sitecore\Developer|sitecore\Sitecore Local Administrators" />
+                      </or>
+                    </conditions>
+                  </rule>
+                  <rule
+                    uid="{668B4333-543C-4E7C-AAFD-0088610625BB}"
+                    s:name="Show Profile">
+                    <conditions>
+                      <condition
+                        uid="8937F1B263EC4827B7AECBD120E6BE8D"
+                        s:id="{B88D5A83-A909-4BC5-90E7-7A8804348CFA}"
+                        s:value="extranet\User" />
+                    </conditions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="A874789EA933485B9C2C5C4734C3C9A9"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                    <actions />
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{52A7426A-8860-4A3B-A0E5-7D8BAB0127DE}"
+              p:after="r[@uid='{1E52D902-080A-44D8-8176-E8C99E84845A}']"
               s:ds="{96FF82B9-1EB7-4722-872B-23D39A8242B8}"
               s:id="{EB838285-4570-4733-90F1-87D2005AECD5}"
               s:par="Style={BC01E1E4-D3CE-4413-AF60-2C1E33C2D2D2}"

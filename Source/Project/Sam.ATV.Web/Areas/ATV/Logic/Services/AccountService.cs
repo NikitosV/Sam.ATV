@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Web.Security;
+using Sam.ATV.Web.Areas.ATV.Models;
+using Sam.ATV.Web.Areas.ATV.Models.Account;
 using Sam.ATV.Web.Areas.ATV.Models.Account.ViewModels;
 using Sitecore.Data;
 using Sitecore.Data.Items;
@@ -127,5 +129,33 @@ namespace Sam.ATV.Web.Areas.ATV.Logic.Services
             }
 
         }
+
+        public void UpdateAccountProfile(AccountProfileViewModel model)
+        {
+            using (new SecurityDisabler())
+            {
+                var editAccount = Master.GetItem(model.Id.ToString());
+
+                editAccount.Editing.BeginEdit();
+
+                try
+                {
+                    editAccount.Fields["NameField"].Value = model.NameUVM;
+                    editAccount.Fields["SurnameField"].Value = model.SurnameUVM;
+                    editAccount.Fields["PhoneField"].Value = model.PhoneUVM;
+
+                    editAccount.Editing.EndEdit();
+                    GlobalLogic.PublishItem(editAccount);
+                }
+                catch (Exception ex)
+                {
+                    Sitecore.Diagnostics.Log.Error(
+                        "Could not update item " + editAccount.Paths.FullPath + ": " + ex.Message, this);
+
+                    editAccount.Editing.CancelEdit();
+                }
+            }
+        }
+
     }
 }

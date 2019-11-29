@@ -1,8 +1,8 @@
 ﻿---
-ID: "25ec63c7-e1f0-4567-8f5e-f1266da1c072"
+ID: "38e0006f-9ec2-4309-afd6-41f38f59abe1"
 Parent: "670f3170-cdf1-481f-a5f7-891248e364d0"
 Template: "4d06567a-3cc1-49fa-81a5-19400e23f995"
-Path: /sitecore/content/Sam/ATV/Users Data/sam__tut_by
+Path: /sitecore/content/Sam/ATV/Users Data/asd__tut_by
 DB: master
 Languages:
 - Language: en
@@ -11,12 +11,21 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20191125T152530Z
+      Value: 20191129T130010Z
+    - ID: "4c9f57bb-5abc-4a7b-b05c-54843ac69d1f"
+      Hint: PhoneField
+      Value: 375445804011
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         extranet\Anonymous
+    - ID: "7db053ec-19b0-4340-a03a-e87de1746ebd"
+      Hint: SurnameField
+      Value: vash
+    - ID: "dd25333a-ec5b-40a3-a1da-f1beddd421b9"
+      Hint: NameField
+      Value: nik
     - ID: "e4944026-f735-4120-a1fc-19cc482f1c8b"
       Hint: EmailField
       Value: |
-        extranet\sam@tut.by
+        extranet\asd@tut.by

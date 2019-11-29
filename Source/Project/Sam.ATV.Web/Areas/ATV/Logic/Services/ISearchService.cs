@@ -1,4 +1,6 @@
 ﻿using Sam.ATV.Web.Areas.ATV.Models;
+using Sam.ATV.Web.Areas.ATV.Models.Account;
+using Sam.ATV.Web.Areas.ATV.Models.Order.ViewModels;
 using Sam.ATV.Web.Areas.ATV.Models.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -14,5 +16,7 @@ namespace Sam.ATV.Web.Areas.ATV.Logic.Services
         int GetCountAlTrips(string searchText);
         IEnumerable<BikeSearchResult> SearchBikeCards(BikeSearchViewModel searchTerm);
         IEnumerable<TripSearchResult> SearchTripCards(TripSearchViewModel searchTerm);
+        AccountProfileViewModel GetByEmail(string email);
+        OrderViewModel GetOrdersByEmail(string email);
     }
 }

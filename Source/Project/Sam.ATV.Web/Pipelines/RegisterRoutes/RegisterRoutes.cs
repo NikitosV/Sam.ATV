@@ -21,6 +21,8 @@ namespace Sam.ATV.Web.Pipelines.RegisterRoutes
 
             RouteTable.Routes.MapRoute(name: "AddBikeToOrder", url: "Order/AddBikeToOrder", defaults: new { controller = "Order", action = "AddBikeToOrder" });
             RouteTable.Routes.MapRoute(name: "AddSocialRev", url: "Contact/AddSocialRev", defaults: new { controller = "Contact", action = "AddSocialRev" });
+
+            RouteTable.Routes.MapRoute(name: "UpdateAccountProfile", url: "Account/UpdateAccountProfile", defaults: new { controller = "Account", action = "UpdateAccountProfile" });
         }
     }
 }

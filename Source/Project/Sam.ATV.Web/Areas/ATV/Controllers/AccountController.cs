@@ -1,4 +1,5 @@
 ﻿using Sam.ATV.Web.Areas.ATV.Logic.Services;
+using Sam.ATV.Web.Areas.ATV.Models.Account;
 using Sam.ATV.Web.Areas.ATV.Models.Account.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -11,10 +12,26 @@ namespace Sam.ATV.Web.Areas.ATV.Controllers
     public class AccountController : Controller
     {
         private readonly IAccountService _accountService;
+        private readonly ISearchService _searchService;
 
-        public AccountController(IAccountService accountService)
+        public AccountController(IAccountService accountService, ISearchService searchService)
         {
             _accountService = accountService;
+            _searchService = searchService;
+        }
+
+        public ActionResult ProfileView()
+        {
+            string email = User.Identity.Name;
+
+            var account = _searchService.GetByEmail(email);
+
+            if (account != null)
+            {
+                return View("~/Areas/ATV/Views/Account/ProfileView.cshtml", account);
+            }
+
+            return View("~/Areas/ATV/Views/Account/ProfileView.cshtml", new AccountProfileViewModel());
         }
 
         public ActionResult Login()
@@ -65,6 +82,15 @@ namespace Sam.ATV.Web.Areas.ATV.Controllers
             _accountService.LogOut();
 
             return Redirect("/Login");
+        }
+
+
+        [HttpPost]
+        public ActionResult UpdateAccountProfile(AccountProfileViewModel model)
+        {
+            _accountService.UpdateAccountProfile(model);
+
+            return Redirect("/ProfileView");
         }
     }
 }

@@ -4,6 +4,10 @@ Parent: "d5d14b80-3b29-4386-a2e0-4eedc2715566"
 Template: "18c2623d-a821-4011-9c80-c32f2098dd75"
 Path: /sitecore/content/Sam/ATV/Content/MyButton/Button DS to Home
 DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
 Languages:
 - Language: en
   Versions:

@@ -1,0 +1,21 @@
+﻿---
+ID: "c2cf8f98-a280-46cc-9f9c-e7f2ac14b9a5"
+Parent: "49b1ba43-8ed8-4e1f-9efb-d939e6ac4602"
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Path: /sitecore/layout/Renderings/Project/ATV/Profile/Orders
+DB: master
+SharedFields:
+- ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
+  Hint: Controller Action
+  Value: Orders
+- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
+  Hint: Controller
+  Value: Sam.ATV.Web.Areas.ATV.Controllers.OrderController, Sam.ATV.Web
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191128T113846Z

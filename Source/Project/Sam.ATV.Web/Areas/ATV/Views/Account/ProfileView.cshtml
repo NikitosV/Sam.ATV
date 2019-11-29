@@ -1,0 +1,49 @@
+﻿@using Sitecore.Mvc
+@model Sam.ATV.Web.Areas.ATV.Models.Account.AccountProfileViewModel
+<hr />
+<form class="col-12 needs-validation">
+    <div class="row">
+        <div class="col">
+            <label>Name</label>
+            <input autocomplete="off" type="text" class="form-control" placeholder="@Model.NameUVM" id="Name" required>
+        </div>
+        <div class="col">
+            <label>Surname</label>
+            <input autocomplete="off" type="text" class="form-control" placeholder="@Model.SurnameUVM" id="Surname" required>
+        </div>
+        <div class="col">
+            <label>Phone in format 375(xx)xxx-xx-xx</label>
+            <input autocomplete="off" type="tel" class="form-control" name="Phone" id="PhoneNumber" placeholder="@Model.PhoneUVM" aria-describedby="basic1" required pattern="375[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}" />
+        </div>
+        <div class="col">
+            <input type="submit" class="btn btn-outline-primary" value="Update" onclick="UpdateProfile()">
+        </div>
+    </div>
+</form>
+
+<script>
+    function UpdateProfile() {
+        debugger;
+        let id = "@Model.Id";
+        let email = "@Model.Email";
+        let name = $('#Name').val();
+        let surname =  $('#Surname').val();
+        let phone = $('#Phone').val();
+
+        $.ajax({
+            url: "/Account/UpdateAccountProfile",
+            method: "POST",
+            data: {
+                Id: id,
+                Email: email,
+                Name: name,
+                Surname: surname,
+                Phone: phone
+            },
+            success: function (results) {
+                alert("Update!");
+                //$('#exampleModal').modal('hide');
+            }
+        });
+    }
+</script>

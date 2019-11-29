@@ -17,10 +17,16 @@
                 </li>
             </ul>
             <ul class="form-inline my-2 my-lg-0">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li style="list-style-type: none;" class="mr-1">
+                        Hi, @User.Identity.Name.Replace(@"extranet\", "")
+                    </li>
+                }
                 <li style="list-style-type: none;">
                     @Html.Sitecore().Placeholder("Login Placeholder")
                 </li>
-                <li style="list-style-type: none;">
+                <li style="list-style-type: none;" class="ml-1">
                     @if (User.Identity.IsAuthenticated)
                     {
                         <form action="/Account/LogOut" method="post">

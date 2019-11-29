@@ -1,4 +1,5 @@
-﻿using Sam.ATV.Web.Areas.ATV.Models.Account.ViewModels;
+﻿using Sam.ATV.Web.Areas.ATV.Models.Account;
+using Sam.ATV.Web.Areas.ATV.Models.Account.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,5 +13,6 @@ namespace Sam.ATV.Web.Areas.ATV.Logic.Services
         bool Login(LoginViewModel model);
         void Register(RegisterViewModel model);
         void LogOut();
+        void UpdateAccountProfile(AccountProfileViewModel model);
     }
 }

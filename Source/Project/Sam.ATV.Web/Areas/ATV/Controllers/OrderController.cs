@@ -1,5 +1,6 @@
 ﻿using Sam.ATV.Web.Areas.ATV.Logic.Services;
 using Sam.ATV.Web.Areas.ATV.Models.Account;
+using Sam.ATV.Web.Areas.ATV.Models.Order.ViewModels;
 using Sam.Feature.BikeCard.Areas.BikeCard.Models.ViewModels;
 using Sitecore.SecurityModel;
 using System;
@@ -29,5 +30,12 @@ namespace Sam.ATV.Web.Areas.ATV.Controllers
                 }
             }
         }
+
+        public ActionResult Orders()
+        {
+            return View("~/Areas/ATV/Views/Order/Orders.cshtml", new OrderViewModel());
+        }
+
+
     }
 }
