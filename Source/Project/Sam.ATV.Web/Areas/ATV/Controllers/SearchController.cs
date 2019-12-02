@@ -1,4 +1,5 @@
 ﻿using Sam.ATV.Web.Areas.ATV.Logic.Services;
+using Sam.ATV.Web.Areas.ATV.Models.Order.ViewModels;
 using Sam.ATV.Web.Areas.ATV.Models.ViewModels;
 using Sam.Feature.BikeCard.Areas.BikeCard.Services;
 using Sam.Feature.TripCard.Areas.TripCard.Services;
@@ -15,12 +16,15 @@ namespace Sam.ATV.Web.Areas.ATV.Controllers
         private readonly ISearchService _searchService;
         private readonly IBikeCardService _bikeCardService;
         private readonly ITripCardService _tripCardService;
+        private readonly IOrderService _orderService;
 
-        public SearchController(ISearchService searchService, IBikeCardService bikeCardService, ITripCardService tripCardService)
+        public SearchController(ISearchService searchService, IBikeCardService bikeCardService, ITripCardService tripCardService, IOrderService orderService)
         {
             _searchService = searchService;
             _bikeCardService = bikeCardService;
             _tripCardService = tripCardService;
+            _tripCardService = tripCardService;
+            _orderService = orderService;
         }
 
         public ViewResult BikeSearch()
@@ -31,6 +35,11 @@ namespace Sam.ATV.Web.Areas.ATV.Controllers
         public ViewResult TripSearch()
         {
             return View("~/Areas/ATV/Views/Search/TripSearch.cshtml", new TripSearchViewModel());
+        }
+
+        public ViewResult OrderSearch()
+        {
+            return View("~/Areas/ATV/Views/Search/OrderSearch.cshtml", new OrderViewModel());
         }
 
         public PartialViewResult SubmitBikeSearch(BikeSearchViewModel viewModel)
@@ -85,26 +94,30 @@ namespace Sam.ATV.Web.Areas.ATV.Controllers
 
             return PartialView("~/Areas/ATV/Views/Search/_TripSearchResult.cshtml", resultsViewModel);
         }
+
+        public PartialViewResult SubmitOrderSearch(OrderViewModel viewModel)
+        {
+
+            var email = User.Identity.Name;
+            var resultsViewModel = new OrderSearchResultsViewModel();
+
+            var results = _searchService.GetOrdersByEmail(email, viewModel);
+            resultsViewModel.CountOrders = _searchService.GetCountAlOrders(viewModel.SearchTerm);
+
+            foreach (var result in results)
+            {
+                var trip = _orderService.GetOrderCardContent(result.ItemId.ToString());
+
+                resultsViewModel.Results.Add(new OrderSearchResultViewModel()
+                {
+                    OrderId = result.ItemId.ToString(),
+                    BikeId = result.BikeId,
+                    BikeName = result.BikeName,
+                    Price = result.Price
+                });
+            }
+
+            return PartialView("~/Areas/ATV/Views/Search/_OrderSearchResult.cshtml", resultsViewModel);
+        }
     }
 }
-
-//public Provider ProviderIdByName(string name)
-//{
-//    using (var context = ContentSearchManager.GetIndex("sitecore_provider_index")
-//        .CreateSearchContext())
-//    {
-//        var query = context.GetQueryable<SearchResultItem>().Where(x => x["profilename_t"].Contains(name));
-//        var result = query.GetResults();
-
-//        if (result != null && result.TotalSearchResults > 0)
-//        {
-//            var item = result.Hits.Where(i => i.Document != null).Select(i => i.Document).FirstOrDefault();
-//            var service = new SitecoreService(Sitecore.Context.Database);
-
-//            Provider resultItem = service.CreateType<Provider>(item.GetItem());
-//            return resultItem;
-//        }
-//    }
-
-//    return null;
-//}

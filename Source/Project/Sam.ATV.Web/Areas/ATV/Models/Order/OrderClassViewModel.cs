@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Sam.ATV.Web.Areas.ATV.Models.Order
 {
-    public class OrderClass : IOrderClass
+    public class OrderClassViewModel
     {
         public Guid Id { get; set; }
         public string EmailName { get; set; }

@@ -14,6 +14,7 @@ namespace Sam.ATV.Web.Pipelines.RegisterRoutes
         {
             RouteTable.Routes.MapRoute("SubmitBikeSearch", "Search/SubmitBikeSearch", new { controller = "Search", action = "SubmitBikeSearch" });
             RouteTable.Routes.MapRoute("SubmitTripSearch", "Search/SubmitTripSearch", new { controller = "Search", action = "SubmitTripSearch" });
+            RouteTable.Routes.MapRoute("SubmitOrderSearch", "Search/SubmitOrderSearch", new { controller = "Search", action = "SubmitOrderSearch" });
 
             RouteTable.Routes.MapRoute(name: "PRegister", url: "Account/PRegister", defaults: new { controller = "Account", action = "PRegister" });
             RouteTable.Routes.MapRoute(name: "PLogin", url: "Account/PLogin", defaults: new { controller = "Account", action = "PLogin" });

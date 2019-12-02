@@ -40,14 +40,14 @@
                             <div>
                                 <b>Description:</b> @result.Description
                             </div>
-                            <div>
+                            <div id="price">
                                 <b>Price:</b> @result.Price $
                             </div>
                         </p>
                         <hr />
                         @if (User.Identity.IsAuthenticated)
                         {
-                            <input type="button" class="btn btn-outline-success" id="@result.Id" value="Buy" onclick="BuyBike(this)">
+                            <input type="button" class="btn btn-outline-success" value="Buy" onclick="BuyBike('@result.Id', '@result.BikeName', '@result.Price')">
                         }
                     </div>
                 </div>
@@ -64,15 +64,15 @@ else
     pageTotal = @Model.CountBikes;
     $('#page-total').text(Math.round(pageTotal / pageSize));
 
-    let BuyBike = function (object) {
-
-        let bikeId = object.id;
+    let BuyBike = function (bikeId, bikeName, bikePrice) {
         debugger;
         $.ajax({
             url: "/Order/AddBikeToOrder",
             method: "Post",
             data: {
-                BikeId: bikeId
+                BikeId: bikeId,
+                BikeName: bikeName,
+                BikePrice: bikePrice
             },
             success: function (results) {
                 alert("Your order confirmed!")

@@ -7,6 +7,7 @@ using Sam.ATV.Web.Areas.ATV.Models.ViewModels;
 using Sam.Foundation.Repository.Content;
 using Sam.Foundation.Repository.Search;
 using Sitecore.Data;
+using Sitecore.Security.Accounts;
 
 namespace Sam.ATV.Web.Areas.ATV.Logic.Services
 {
@@ -57,6 +58,25 @@ namespace Sam.ATV.Web.Areas.ATV.Logic.Services
             {
                 count = _searchRepository.Search<TripSearchResult>(
                    q => q.Path.StartsWith("/sitecore/content/Sam/ATV/Data/Trips/")).Count();
+            }
+
+            return count;
+        }
+
+        public int GetCountAlOrders(string searchText)
+        {
+            int count = 0;
+            var email = User.Current.Identity.Name;
+            if (searchText != null)
+            {
+                count = _searchRepository.Search<OrderSearchResult>(
+                   q => q.BikeName.Contains(searchText) &&
+                   q.Path.StartsWith("/sitecore/content/Sam/ATV/Data/Orders/")).Where(x => x.Fields["emailname"].Equals(email)).Count();
+            }
+            else
+            {
+                count = _searchRepository.Search<OrderSearchResult>(
+                   q => q.Path.StartsWith("/sitecore/content/Sam/ATV/Data/Orders/")).Where(x => x.Fields["emailname"].Equals(email)).Count();
             }
 
             return count;
@@ -137,16 +157,17 @@ namespace Sam.ATV.Web.Areas.ATV.Logic.Services
 
             if (searchTerm.SearchTerm == null)
             {
-                orders = _searchRepository.Search<OrderSearchResult>(
-                   q => q.Path.StartsWith("/sitecore/content/Sam/ATV/Data/Trips/"))
+                orders = _searchRepository.Search<OrderSearchResult>(q => q.Path.StartsWith("/sitecore/content/Sam/ATV/Data/Orders/"))
+                   .Where(x => x.Fields["emailname"].Equals(email))
                    .Skip((searchTerm.PageCurrent - 1) * searchTerm.PageSize)
                    .Take(searchTerm.PageSize);
             }
             else
             {
                 orders = _searchRepository.Search<OrderSearchResult>(
-                    q => q.Title.Contains(searchTerm.SearchTerm) &&
-                    q.Path.StartsWith("/sitecore/content/Sam/ATV/Data/Trips/"))
+                    q => q.BikeName.Contains(searchTerm.SearchTerm) &&
+                    q.Path.StartsWith("/sitecore/content/Sam/ATV/Data/Orders/"))
+                    .Where(x => x.Fields["emailname"].Equals(email))
                     .Skip((searchTerm.PageCurrent - 1) * searchTerm.PageSize)
                     .Take(searchTerm.PageSize);
             }

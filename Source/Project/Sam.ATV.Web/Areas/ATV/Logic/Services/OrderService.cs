@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Web.Security;
 using Sam.ATV.Web.Areas.ATV.Models.Account.ViewModels;
+using Sam.ATV.Web.Areas.ATV.Models.Order;
 using Sam.Foundation.Repository.Content;
 using Sitecore.Data;
 using Sitecore.Data.Items;
@@ -20,7 +21,7 @@ namespace Sam.ATV.Web.Areas.ATV.Logic.Services
             _contentRepository = contentRepository;
         }
 
-        public void AddBikeAsOrder(string bike)
+        public void AddBikeAsOrder(string bikeId, string bikeName, string bikePrice)
         {
             var emailName = User.Current.Name;
 
@@ -31,7 +32,7 @@ namespace Sam.ATV.Web.Areas.ATV.Logic.Services
                 itemName = itemName.Replace('.', '_');
 
                 Item parent = Master.GetItem(ID.Parse("{08D7057C-369D-4900-9FA0-4BCD976216D8}")); // id folder
-                TemplateItem temp = Master.GetItem(ID.Parse("{ACFF893C-5E4D-479A-A9EE-319BB06E5BB4}")); // account
+                TemplateItem temp = Master.GetItem(ID.Parse("{510E2C3A-FAE7-4285-8737-537CFC4CDEA7}")); // bikeOrder
 
                 // Add the item to the site tree
                 var newItem = parent.Add(itemName, temp);
@@ -45,7 +46,9 @@ namespace Sam.ATV.Web.Areas.ATV.Logic.Services
                 {
                     // Assign values to the fields of the new item
                     newItem.Fields["EmailName"].Value = emailName;
-                    newItem.Fields["BikeId"].Value = bike;
+                    newItem.Fields["BikeId"].Value = bikeId;
+                    newItem.Fields["BikeName"].Value = bikeName;
+                    newItem.Fields["Price"].Value = bikePrice;
                     //newItem.Fields["Phone"].Value =
 
                     // End editing will write the new values back to the Sitecore
@@ -66,6 +69,11 @@ namespace Sam.ATV.Web.Areas.ATV.Logic.Services
                 }
             }
 
+        }
+
+        public IOrderClass GetOrderCardContent(string contentGuid)
+        {
+            return _contentRepository.GetContentItem<IOrderClass>(contentGuid);
         }
     }
 }

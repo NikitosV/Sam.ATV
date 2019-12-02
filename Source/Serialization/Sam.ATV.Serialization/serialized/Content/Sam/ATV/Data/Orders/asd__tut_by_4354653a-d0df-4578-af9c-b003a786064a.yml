@@ -1,0 +1,31 @@
+﻿---
+ID: "4354653a-d0df-4578-af9c-b003a786064a"
+Parent: "08d7057c-369d-4900-9fa0-4bcd976216d8"
+Template: "510e2c3a-fae7-4285-8737-537cfc4cdea7"
+Path: /sitecore/content/Sam/ATV/Data/Orders/asd__tut_by
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1b51a149-9a65-4d9a-8f0b-441c96f93187"
+      Hint: Price
+      Value: 200
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191202T115547Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\asd@tut.by
+    - ID: "8eb09a65-92b6-4881-a149-2dde16edca12"
+      Hint: BikeName
+      Value: "Honda 121-sa"
+    - ID: "aa97e091-d1d4-4786-9d56-8c6a33962229"
+      Hint: EmailName
+      Value: |
+        extranet\asd@tut.by
+    - ID: "c63392e0-cb87-4b81-9825-719f57053ee4"
+      Hint: BikeId
+      Value: "{3A2CB4CC-13DB-420E-A8C5-0028191D9647}"

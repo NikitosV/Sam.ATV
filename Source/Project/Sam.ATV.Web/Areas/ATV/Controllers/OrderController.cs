@@ -20,13 +20,13 @@ namespace Sam.ATV.Web.Areas.ATV.Controllers
             _orderService = orderService;
         }
 
-        public void AddBikeToOrder(string BikeId)
+        public void AddBikeToOrder(string BikeId, string BikeName, string BikePrice)
         {
             using (new SecurityDisabler())
             {
-                if(BikeId != null)
+                if(BikeId != null & BikeName != null & BikePrice != null)
                 {
-                    _orderService.AddBikeAsOrder(BikeId);
+                    _orderService.AddBikeAsOrder(BikeId, BikeName, BikePrice);
                 }
             }
         }

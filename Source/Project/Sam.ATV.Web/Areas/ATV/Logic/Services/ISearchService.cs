@@ -14,9 +14,10 @@ namespace Sam.ATV.Web.Areas.ATV.Logic.Services
     {
         int GetCountAllBikes(string searchText);
         int GetCountAlTrips(string searchText);
+        int GetCountAlOrders(string searchText);
         IEnumerable<BikeSearchResult> SearchBikeCards(BikeSearchViewModel searchTerm);
         IEnumerable<TripSearchResult> SearchTripCards(TripSearchViewModel searchTerm);
         AccountProfileViewModel GetByEmail(string email);
-        OrderViewModel GetOrdersByEmail(string email);
+        IEnumerable<OrderSearchResult> GetOrdersByEmail(string email, OrderViewModel searchTerm);
     }
 }

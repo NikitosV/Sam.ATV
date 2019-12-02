@@ -214,6 +214,8 @@
     <Content Include="Areas\ATV\Views\Shared\UserOrderLayout.cshtml" />
     <Content Include="Areas\ATV\Views\Order\Orders.cshtml" />
     <Content Include="Areas\ATV\Views\Account\ProfileView.cshtml" />
+    <Content Include="Areas\ATV\Views\Search\OrderSearch.cshtml" />
+    <Content Include="Areas\ATV\Views\Search\_OrderSearchResult.cshtml" />
     <None Include="Global.asax" />
     <Content Include="App_Config\Include\zzz.Sam.ATV.Web\zzz.Sam.ATV.config">
       <SubType>Designer</SubType>
@@ -293,10 +295,16 @@
     <Compile Include="Areas\ATV\Models\Account\ViewModels\LoginViewModel.cs" />
     <Compile Include="Areas\ATV\Models\Account\ViewModels\RegisterViewModel.cs" />
     <Compile Include="Areas\ATV\Models\BikeSearchResult.cs" />
+    <Compile Include="Areas\ATV\Models\OrderSearchResult.cs" />
+    <Compile Include="Areas\ATV\Models\Order\Configuration\IOrderClassMap.cs" />
+    <Compile Include="Areas\ATV\Models\Order\IOrderClass.cs" />
     <Compile Include="Areas\ATV\Models\Order\OrderClass.cs" />
+    <Compile Include="Areas\ATV\Models\Order\OrderClassViewModel.cs" />
     <Compile Include="Areas\ATV\Models\Order\ViewModels\OrderViewModel.cs" />
     <Compile Include="Areas\ATV\Models\TripSearchResult.cs" />
     <Compile Include="Areas\ATV\Models\ViewModels\BikeSearchViewModel.cs" />
+    <Compile Include="Areas\ATV\Models\ViewModels\OrderSearchResultsViewModel.cs" />
+    <Compile Include="Areas\ATV\Models\ViewModels\OrderSearchResultViewModel.cs" />
     <Compile Include="Areas\ATV\Models\ViewModels\SearchResultsViewModel.cs" />
     <Compile Include="Areas\ATV\Models\ViewModels\SearchResultViewModel.cs" />
     <Compile Include="Areas\ATV\Models\ViewModels\TripSearchResultsViewModel.cs" />

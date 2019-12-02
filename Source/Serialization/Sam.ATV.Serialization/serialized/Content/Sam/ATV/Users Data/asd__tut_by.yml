@@ -12,19 +12,10 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20191129T130010Z
-    - ID: "4c9f57bb-5abc-4a7b-b05c-54843ac69d1f"
-      Hint: PhoneField
-      Value: 375445804011
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         extranet\Anonymous
-    - ID: "7db053ec-19b0-4340-a03a-e87de1746ebd"
-      Hint: SurnameField
-      Value: vash
-    - ID: "dd25333a-ec5b-40a3-a1da-f1beddd421b9"
-      Hint: NameField
-      Value: nik
     - ID: "e4944026-f735-4120-a1fc-19cc482f1c8b"
       Hint: EmailField
       Value: |
