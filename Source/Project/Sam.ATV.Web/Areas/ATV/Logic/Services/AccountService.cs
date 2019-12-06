@@ -63,8 +63,6 @@ namespace Sam.ATV.Web.Areas.ATV.Logic.Services
                     // Have modified the user template to also contain telephone number and patronomyc.
                     //user.Profile.SetCustomProperty("Surname", vm.Surname);
                     user.Profile.SetCustomProperty("Phone", model.Phone);
-                    //user.Profile.SetCustomProperty("UserName", vm.Name);
-                    //user.Profile.SetCustomProperty("Department", $"{{{vm.DepartmentId.ToString().ToUpper()}}}");
                 }
 
                 user.Profile.Save();

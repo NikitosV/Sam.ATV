@@ -9,7 +9,7 @@ namespace Sam.ATV.Web.Areas.ATV.Models
 {
     public class TripSearchResult : SearchResultItem
     {
-        [IndexField("title")]
+
         public string Title { get; set; }
 
         [IndexField("description")]

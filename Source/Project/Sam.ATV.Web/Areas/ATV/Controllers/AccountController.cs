@@ -54,7 +54,7 @@ namespace Sam.ATV.Web.Areas.ATV.Controllers
                 }
             }
 
-            return Redirect("/Login");
+            return Redirect("/Home");
         }
         
         public ActionResult Register()

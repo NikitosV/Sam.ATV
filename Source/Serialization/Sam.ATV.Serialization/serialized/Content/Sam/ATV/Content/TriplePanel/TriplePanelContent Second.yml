@@ -1,0 +1,36 @@
+﻿---
+ID: "9557cd0f-0be2-4593-ac3d-886cd54dc2a3"
+Parent: "8ed43b99-84cd-481f-9525-18d32386623a"
+Template: "ae49f56f-abe6-419f-ac6b-0a618c760472"
+Path: /sitecore/content/Sam/ATV/Content/TriplePanel/TriplePanelContent Second
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "11c60677-9bd9-48ca-bbb7-a195fc04fbfa"
+      Hint: MainTwo
+      Value: "https://doc.sitecore.com/developers/93/sitecore-experience-manager/en/mvc-and-pipelines.html"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20191203T101958Z
+    - ID: "422c82b6-21cb-4b98-9cea-a2be9fe6f382"
+      Hint: MainOne
+      Value: "https://doc.sitecore.com/users/81/sitecore-experience-platform/en/item-buckets.html"
+    - ID: "427622f8-efa3-4b5e-a2f0-1a57cc9fd747"
+      Hint: HeadTwo
+      Value: Query
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "6d879516-60bc-4228-b814-982bc34fc60d"
+      Hint: HeadTree
+      Value: Pipelines
+    - ID: "9f46a17f-cb6a-4b55-b5df-900655cde057"
+      Hint: HeadOne
+      Value: Buckets
+    - ID: "f15be100-355e-48a0-a7ab-6574fbbc6a9f"
+      Hint: MainTree
+      Value: "https://doc.sitecore.com/developers/93/sitecore-experience-manager/en/mvc-and-pipelines.html"

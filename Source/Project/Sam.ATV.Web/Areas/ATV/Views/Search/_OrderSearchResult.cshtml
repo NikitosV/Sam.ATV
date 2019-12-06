@@ -30,8 +30,8 @@
                             <div>
                                 <b>Price:</b> @result.Price $
                             </div>
+                            @*<input type="button" class="btn btn-outline-danger" value="Delete">*@
                         </p>
-                        @*<button class="btn btn-sm btn-outline-success" type="submit">Want</button>*@
                     </div>
                 </div>
             </div>
@@ -43,7 +43,29 @@ else
     <h2 class="text-center text-danger display-4">Empty result!</h2>
 }
 
-<script>
+@*<script>
     pageTotal = @Model.CountOrders;
     $('#page-total').text(Math.round(pageTotal / pageSize));
 </script>
+<script>
+    let Delete = function () {
+
+        $.ajax({
+            url: "/search/DeleteBikeSearch",
+            method: "GET",
+            data: {
+                SearchText: searchText,
+                PageSize: pageSize,
+                PageCurrent: pageIndex
+            },
+            success: function (results) {
+
+                $('#search-results').html(results);
+            },
+            error: function (data) {
+
+                //$('#search-results-hotels').html('<h2>Ooops... No results.</h2>');
+            }
+        });
+    };
+</script>*@

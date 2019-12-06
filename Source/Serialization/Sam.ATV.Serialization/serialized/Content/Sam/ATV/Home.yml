@@ -34,19 +34,20 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{602D07CC-B530-4CD4-83CD-30427A9FFEAB}"
+              uid="{97787336-3C3F-4350-94CB-E0072B7F716E}"
               p:before="*"
+              s:ds="{5F4A3089-FC30-4487-B202-1D477589ED72}"
               s:id="{71969343-3DEC-4C77-B08C-E8D50A35A9D9}"
               s:ph="PanelContent" />
             <r
-              uid="{D1F1DB27-B3CB-4667-AA00-046E6428C8D7}"
-              p:after="r[@uid='{602D07CC-B530-4CD4-83CD-30427A9FFEAB}']"
+              uid="{6F04C925-D5F9-4D07-A8E7-477FD20B3C10}"
+              p:after="r[@uid='{97787336-3C3F-4350-94CB-E0072B7F716E}']"
               s:ds="{19F8B595-F01B-422B-9664-9B40CB79CE6E}"
               s:id="{A19CA50F-AB75-4B5E-B83D-3535B2E6A1CE}"
               s:ph="SliderContent" />
             <r
               uid="{B17A78A8-830D-4F7F-ABB8-5D24071108DD}"
-              p:after="r[@uid='{D1F1DB27-B3CB-4667-AA00-046E6428C8D7}']"
+              p:after="r[@uid='{6F04C925-D5F9-4D07-A8E7-477FD20B3C10}']"
               s:id="{4B4E591E-BB00-4CA7-9BC9-DEE587AA0FC6}"
               s:ph="SearchBike" />
             <r
